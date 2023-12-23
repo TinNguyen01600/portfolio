@@ -1,10 +1,10 @@
-import { useState } from 'react'
 import './App.css'
+import ConnectButton from './components/ConnectButton'
 
 function App() {
   return (
     <>
-      Hello
+      <ConnectButton />
     </>
   )
 }
