@@ -14,21 +14,6 @@ const Header = () => {
     }
     return (
         <div className="header">
-            <div className="header-btn-ctn" >
-                <ConnectButton />
-                <a href="https://www.linkedin.com/in/tin-nguyen-01600/" target="_blank" rel="noopener noreferrer">
-                    <motion.img
-                        src={linkedin} alt="LinkedIn" 
-                        variants={iconVariants} initial='initial' whileHover='hover'
-                    />
-                </a>
-                <a href="https://github.com/TinNguyen01600" target="_blank" rel="noopener noreferrer">
-                    <motion.img
-                        src={github} alt="Github" 
-                        variants={iconVariants} initial='initial' whileHover='hover'
-                    />
-                </a>
-            </div>
             <motion.img src={bird} alt=""
                 className="bird"
                 animate={{ y: [-5, 5, -5] }}
@@ -38,6 +23,22 @@ const Header = () => {
                     ease: "linear",
                 }}
             />
+            <div className="header-btn-ctn" >
+                <a href="https://www.linkedin.com/in/tin-nguyen-01600/" target="_blank" rel="noopener noreferrer">
+                    <motion.img
+                        src={linkedin} alt="LinkedIn"
+                        variants={iconVariants} initial='initial' whileHover='hover'
+                    />
+                </a>
+                <a href="https://github.com/TinNguyen01600" target="_blank" rel="noopener noreferrer">
+                    <motion.img
+                        src={github} alt="Github"
+                        variants={iconVariants} initial='initial' whileHover='hover'
+                    />
+                </a>
+                <ConnectButton />
+            </div>
+
         </div>
     )
 }
