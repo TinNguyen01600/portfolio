@@ -1,10 +1,10 @@
 import './App.css'
-import ConnectButton from './components/ConnectButton'
+import Header from './components/Header'
 
 function App() {
   return (
     <>
-      <ConnectButton />
+      <Header />
     </>
   )
 }
