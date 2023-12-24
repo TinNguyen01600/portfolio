@@ -16,7 +16,7 @@ const Header = () => {
         <div className="header">
             <motion.img src={bird} alt=""
                 className="bird"
-                animate={{ y: [-5, 5, -5] }}
+                animate={{ y: ['-2vh', '3vh', '-2vh'] }}
                 transition={{
                     duration: 3,
                     repeat: Infinity,
