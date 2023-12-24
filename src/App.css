@@ -16,7 +16,20 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 2px solid black; */
+}
+
+/*******************************************************************/
+.header-btn-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-btn-ctn img {
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
 }
 
 /*******************************************************************/
