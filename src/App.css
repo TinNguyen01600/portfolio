@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
 html {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
@@ -6,6 +8,7 @@ html {
 section {
     height: 100vh;
     scroll-snap-align: center;
+    background-color: #161616;
 }
 
 * {
@@ -114,31 +117,54 @@ section {
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+/*******************************************************************/
+
+.earth {
+    background-image: url('./img/earth.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.stars {
+    background-image: url('./img/stars.png');
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/*******************************************************************/
+.parallax-text {
+    color: white;
+    display: flex;
+    margin: 0 12vw 0 26vw;
+    gap: 21vw;
 
     h1 {
-        color: red;
-        z-index: 1;
+        width: 13vw;
+        font-family: 'Single day';
+        font-size: 7vh;
+        text-align: center;
     }
+}
 
-    .earth {
-        background-image: url('./img/earth.png');
-        background-size: cover;
-        background-position: bottom;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-    }
-    .stars {
-        background-color: black;
-        background-image: url('./img/stars.png');
-        background-size: cover;
-        background-position: bottom;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-    }
+/*******************************************************************/
+.astronaut {
+    height: 200vh;
+}
+
+
+/*******************************************************************/
+.section-3 {
+    background: url('./img/bulbs.jpg') no-repeat center center/cover;
 }

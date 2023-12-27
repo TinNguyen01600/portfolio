@@ -2,6 +2,7 @@ import './App.css'
 import Banner from './components/Banner'
 import Header from './components/Header'
 import Parallax from './components/Parallax'
+import MainPage from './components/MainPage'
 
 function App() {
     return (
@@ -12,6 +13,9 @@ function App() {
             </section>
             <section className='section-2'>
                 <Parallax />
+            </section>
+            <section className='section-3'>
+                <MainPage />
             </section>
         </>
     )
