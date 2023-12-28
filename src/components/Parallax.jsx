@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
-import astronaut from '../img/astronaut.png'
+import Astronaut from "./Astronaut"
 
 const Parallax = () => {
     const ref = useRef()
@@ -20,14 +20,7 @@ const Parallax = () => {
                 <h1>Nothing Special Here</h1>
                 <h1>Just some cool animations</h1>
             </motion.div>
-            <motion.img src={astronaut} alt="" className="astronaut"
-                animate={{ y: ['-100vh', '-90vh', '-100vh'] }}
-                transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "linear",
-                }}
-            />
+            <Astronaut />
         </div>
     )
 }
