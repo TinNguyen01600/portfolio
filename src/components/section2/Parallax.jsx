@@ -25,6 +25,14 @@ const Parallax = () => {
                 </motion.div>
                 <Astronaut />
             </div>
+            <motion.div
+                className="slide-text"
+                initial={{ x: '100%' }}
+                animate={{ x: '-100%' }}
+                transition={{ ease: 'linear', duration: 10, repeat: Infinity }}
+            >
+                TIN NGUYEN IS AWESOME !!!
+            </motion.div>
         </div>
     )
 }
