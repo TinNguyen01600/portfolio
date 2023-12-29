@@ -1,8 +1,8 @@
 import './App.css'
-import Banner from './components/Banner'
-import Header from './components/Header'
-import Parallax from './components/Parallax'
-import MainPage from './components/MainPage'
+import Banner from './components/section1/Banner'
+import Header from './components/section1/Header'
+import Parallax from './components/section2/Parallax'
+import MainPage from './components/section3/MainPage'
 
 function App() {
     return (

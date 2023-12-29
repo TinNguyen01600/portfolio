@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import astronaut from '../img/astronaut.png'
+import astronaut from '../../img/astronaut.png'
 import { useState, useEffect } from "react";
 
 const Astronaut = () => {
@@ -46,6 +46,7 @@ const Astronaut = () => {
                 animate={isVisible && {
                     x: [-20, 150],
                     y: [-220, -220],
+                    opacity: [0, 1],
                     transition: { duration: 1 }
                 }}
                 style={{
