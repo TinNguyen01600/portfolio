@@ -7,7 +7,8 @@ const Astronaut = () => {
     const [isVisible, setIsVisible] = useState(false);
 
     const handleDragEnd = (event, info) => {
-        if (info.point.x > 1200) {
+        console.log(info.point.y)
+        if (info.point.x > 1250 && (820 > info.point.y)) {
             setIsVisible(false);
             setIsVisibleInitAs(false)
         }
@@ -23,14 +24,14 @@ const Astronaut = () => {
         <>
             {isVisibleInitAs && <motion.img src={astronaut} alt=""
                 drag
-                dragConstraints={{ left: -1100, right: 5, top: -250, bottom: 250 }}
+                dragConstraints={{ left: 0, right: 1150, top: -400, bottom: 100 }}
                 onDragEnd={handleDragEnd}
                 whileTap={{ cursor: 'grabbing' }}
                 whileHover={{ cursor: 'grab', scale: 0.9 }}
                 
-                initial={{x: -100}}
+                initial={{x: 1050}}
                 animate={{
-                    y: [-200, -50, -200],
+                    y: [-300, -120, -300],
                     rotate: [0, 180, 0, -90, 90, 0, -180, 0],
                     transition: { duration: 12, repeat: Infinity, ease: 'linear' }
                 }}
@@ -38,14 +39,14 @@ const Astronaut = () => {
 
             {isVisible && <motion.img src={astronaut} alt=''
                 drag
-                dragConstraints={{ left: 0, right: 1100, top: -250, bottom: 250 }}
+                dragConstraints={{ left: 0, right: 1150, top: -400, bottom: 100 }}
                 onDragEnd={handleDragEnd}
                 whileTap={{ cursor: 'grabbing' }}
                 whileHover={{ cursor: 'grab', scale: 0.9 }}
 
                 animate={isVisible && {
                     x: [-20, 150],
-                    y: [-220, -220],
+                    y: [-350, -350],
                     opacity: [0, 1],
                     transition: { duration: 1 }
                 }}
