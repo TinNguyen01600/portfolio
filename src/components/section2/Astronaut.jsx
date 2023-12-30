@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import astronaut from '../../img/astronaut.png'
+import astronaut from '../../img/section3/astronaut.png'
 import { useState, useEffect } from "react";
 
 const Astronaut = () => {
@@ -8,7 +8,7 @@ const Astronaut = () => {
 
     const handleDragEnd = (event, info) => {
         console.log(info.point.y)
-        if (info.point.x > 1250 && (820 > info.point.y)) {
+        if (info.point.x < 100 && (info.point.y < 1050)) {
             setIsVisible(false);
             setIsVisibleInitAs(false)
         }
@@ -24,7 +24,7 @@ const Astronaut = () => {
         <>
             {isVisibleInitAs && <motion.img src={astronaut} alt=""
                 drag
-                dragConstraints={{ left: 0, right: 1150, top: -400, bottom: 100 }}
+                dragConstraints={{ left: 0, right: 1150, top: -500, bottom: 200 }}
                 onDragEnd={handleDragEnd}
                 whileTap={{ cursor: 'grabbing' }}
                 whileHover={{ cursor: 'grab', scale: 0.9 }}
@@ -39,14 +39,15 @@ const Astronaut = () => {
 
             {isVisible && <motion.img src={astronaut} alt=''
                 drag
-                dragConstraints={{ left: 0, right: 1150, top: -400, bottom: 100 }}
+                dragConstraints={{ left: 0, right: 1150, top: -500, bottom: 200 }}
                 onDragEnd={handleDragEnd}
                 whileTap={{ cursor: 'grabbing' }}
                 whileHover={{ cursor: 'grab', scale: 0.9 }}
 
+                initial={{x: '85vw', y: '-52vh'}}
                 animate={isVisible && {
-                    x: [-20, 150],
-                    y: [-350, -350],
+                    x: 1000,
+                    y: -350,
                     opacity: [0, 1],
                     transition: { duration: 1 }
                 }}

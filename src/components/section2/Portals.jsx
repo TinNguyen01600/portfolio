@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const Portal = () => {
     return (
         <div className='portals'>
-            <motion.img src={out_portal} alt="" style={{ width: '14.5vw' }}
+            <motion.img src={out_portal} alt="" style={{ width: '12vw' }}
                 initial={{ rotate: "0", scale: 0 }}
                 whileInView={{
                     rotate: "360deg",
