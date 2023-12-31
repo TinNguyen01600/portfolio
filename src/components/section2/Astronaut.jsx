@@ -29,11 +29,11 @@ const Astronaut = () => {
                 whileTap={{ cursor: 'grabbing' }}
                 whileHover={{ cursor: 'grab', scale: 0.9 }}
                 
-                initial={{x: 1050}}
                 animate={{
-                    y: [-300, -120, -300],
+                    x: [100, 1050],
+                    y: [-300, 20, -300],
                     rotate: [0, 180, 0, -90, 90, 0, -180, 0],
-                    transition: { duration: 12, repeat: Infinity, ease: 'linear' }
+                    transition: { duration: 12, repeat: Infinity, ease: 'linear', repeatType: 'mirror' }
                 }}
             />}
 
