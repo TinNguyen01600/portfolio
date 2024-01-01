@@ -1,7 +1,7 @@
 import ConnectButton from "./ConnectButton"
-import bird from '../../img/bird.png'
-import linkedin from '../../img/linkedin.svg'
-import github from '../../img/github.svg'
+import bird from '../../img/section1/bird.png'
+import linkedin from '../../img/section1/linkedin.svg'
+import github from '../../img/section1/github.svg'
 import { motion } from "framer-motion"
 
 const Header = () => {

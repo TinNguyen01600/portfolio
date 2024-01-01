@@ -1,5 +1,5 @@
-import in_portal from '../../img/section3/in_portal.png'
-import out_portal from '../../img/section3/out_portal.png'
+import in_portal from '../../img/section2/in_portal.png'
+import out_portal from '../../img/section2/out_portal.png'
 import { motion } from 'framer-motion'
 
 const Portal = () => {

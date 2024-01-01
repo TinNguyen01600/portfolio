@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import astronaut from '../../img/section3/astronaut.png'
+import astronaut from '../../img/section2/astronaut.png'
 import { useState, useEffect } from "react";
 
 const Astronaut = () => {
