@@ -3,7 +3,9 @@ import Banner from './components/section1/Banner'
 import Header from './components/section1/Header'
 import Sidebar from './components/section1/sidebar/Sidebar'
 import Parallax from './components/section2/Parallax'
-import MainPage from './components/section3/MainPage'
+import Home from './components/section3/Home'
+import AboutMe from './components/section3/AboutMe'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
     return (
@@ -17,7 +19,12 @@ function App() {
                 <Parallax />
             </section>
             <section className='section-3'>
-                <MainPage />
+                <Router>
+                    <Routes>
+                        <Route exact path="/" element={<Home />} />
+                        <Route exact path="/about" element={<AboutMe />} />
+                    </Routes>
+                </Router>
             </section>
         </>
     )
