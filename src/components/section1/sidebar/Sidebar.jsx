@@ -5,16 +5,15 @@ import { motion } from "framer-motion"
 
 const variants = {
     open: {
-        clipPath: 'circle(1200px at 50px 600px)',
+        clipPath: 'circle(2000px at 3.8vw 91.5vh)',
         transition: {
             type: 'spring',
             stiffness: 20,
         }
     },
     close: {
-        clipPath: 'circle(30px at 50px 600px)',
+        clipPath: 'circle(25px at 3.7vw 91.5vh)',
         transition: {
-            delay: 0.5,
             type: 'spring',
             stiffness: 400,
             damping: 40
