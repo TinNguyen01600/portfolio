@@ -1,5 +1,4 @@
 import { motion } from "framer-motion"
-import Luck from "./Luck"
 
 const boxVariant = {
     initial: { x: '300vw' },
@@ -19,9 +18,6 @@ const boxItemVariant = {
 const Banner = () => {
     return (
         <div className="banner">
-            <div className="banner-luck">
-                <Luck />
-            </div>
             <motion.div
                 className="banner-text"
                 variants={boxVariant}
