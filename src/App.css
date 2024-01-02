@@ -234,14 +234,16 @@ section {
 .section-3 {
     background: url('./img/section3/bulbs.jpg') no-repeat center center/cover;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+/*******************************************************************/
 .home {
     display: grid;
     grid-template-columns: repeat(3, 10vw);
     gap: 7vh 5vw;
+    align-self: flex-end;
 }
 
 /*******************************************************************/
@@ -257,7 +259,8 @@ section {
     z-index: 0;
     border-radius: 10px;
     font-weight: 900;
-    font-size: 3vh;
+    font-size: 5vh;
+    font-family: 'Single day';
 }
 
 .glow-box:before {
@@ -297,6 +300,7 @@ section {
 
 .glow-box:hover:before {
     opacity: 1;
+    scale: 1.06;
 }
 
 .glow-box:after {
@@ -312,3 +316,15 @@ section {
 }
 
 /*******************************************************************/
+.footer {
+    border-top: 4px solid white;
+    width: 100%;
+    height: 8vh;
+    align-self: flex-end;
+    padding-right: 2vw;
+
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

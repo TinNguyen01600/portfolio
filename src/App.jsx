@@ -6,6 +6,7 @@ import Parallax from './components/section2/Parallax'
 import Home from './components/section3/Home'
 import AboutMe from './components/section3/AboutMe'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Footer from './components/section3/Footer'
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                         <Route exact path="/about" element={<AboutMe />} />
                     </Routes>
                 </Router>
+                <Footer />
             </section>
         </>
     )
