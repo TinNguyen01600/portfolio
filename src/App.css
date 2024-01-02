@@ -177,10 +177,10 @@ section {
             color: white;
             display: flex;
             gap: 21vw;
-        
+
             display: flex;
             justify-content: center;
-        
+
             h1 {
                 width: 13vw;
                 font-family: 'Single day';
@@ -233,4 +233,82 @@ section {
 /*******************************************************************/
 .section-3 {
     background: url('./img/section3/bulbs.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.home {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    gap: 7vh 5vw;
+}
+
+/*******************************************************************/
+.glow-box {
+    width: 12vw;
+    height: 18vh;
+    border: 2px solid white;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 3vh;
+}
+
+.glow-box:before {
+    content: "";
+    background: linear-gradient(45deg,
+            #fff,
+            #faf8e3,
+            #faf6c5,
+            #faf189,
+            #faec48,
+            #ffea03,
+            #faec48,
+            #faf189,
+            #faf6c5,
+            #faf8e3,
+            #fff);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 360%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-box:active {
+    color: #000;
+}
+
+.glow-box:active:after {
+    background: transparent;
+}
+
+.glow-box:hover:before {
+    opacity: 1;
+}
+
+.glow-box:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/*******************************************************************/
