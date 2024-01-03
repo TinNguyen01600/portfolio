@@ -1,24 +1,30 @@
 import CloseButton from './CloseButton'
+import laptop from '../../img/section3/laptop.png'
 
 const Work = () => {
     return (
         <div className="work">
-            {/* <svg height='100%' width='100%'>
-                <circle cx={50} cy={50} r={10} fill="red" />
-                <line x1="200" y1="0" x2="200" y2="100%" stroke="black" strokeWidth='4' />
-            </svg> */}
-
-            <div className='tree'>
-                <div className='item'>
-                    {/* <svg height='100%' width='100%'>
-                        <circle cx={10} cy={10} r={10} fill="red" />
-                    </svg> */}
-                    <h1>SOFTWARE DESIGNER TALENT</h1>
-                    <p>Wapice Ltd.</p>
-                </div>
-                <div className='item'>
-                    <h1>EMBEDDED SOFTWARE INTERN</h1>
-                    <p>TMA Software Solutions Limited</p>
+            <div className='main'>
+                <img src={laptop} alt="" />
+                <div className='tree'>
+                    <div className='item'>
+                        <svg width='2vw' height='12vh'>
+                            <circle cx='0' cy='6vh' r={10} fill="red" />
+                        </svg>
+                        <div className='text'>
+                            <h1>Embedded Software Intern</h1>
+                            <p>TMA Software Solutions Limited</p>
+                        </div>
+                    </div>
+                    <div className='item'>
+                        <svg width='2vw' height='12vh'>
+                            <circle cx='0' cy='6vh' r={10} fill="red" />
+                        </svg>
+                        <div className='text'>
+                            <h1>Software Designer Talent</h1>
+                            <p>Wapice Ltd.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <CloseButton />

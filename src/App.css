@@ -366,10 +366,12 @@ section {
             font-size: 7vh;
             margin-bottom: 3vh;
         }
+
         h3 {
             opacity: 0.5;
             margin-bottom: 2vh;
         }
+
         mark {
             color: orange;
             background: transparent;
@@ -382,22 +384,38 @@ section {
     background: whitesmoke;
     width: 100%;
     height: 92vh;
-
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
 
-    .tree {
-        border: 1px solid black;
+    .main {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
 
-        align-self: center;
-
-        .item {
-            border: 1px solid black;
-            border-radius: 5px;
+        img {
             width: 30vw;
-            padding: 1vw;
-            margin-bottom: 5vh;
+        }
+
+        .tree {
+            border-left: 3px solid black;
+            padding-top: 5vh;
+            .item {
+                display: flex;
+                margin-bottom: 5vh;
+
+                .text {
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    width: 30vw;
+                    padding: 1vw;
+                    h1 {
+                        margin-bottom: 1vh;
+                    }
+                    p {
+                        font-size: 3vh;
+                    }
+                }
+            }
         }
     }
 }
