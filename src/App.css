@@ -112,7 +112,33 @@ section {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 5vh;
+
+            img {
+                height: 30vh;
+                border-radius: 50%;
+                margin-bottom: 5vh;
+            }
+
+            a {
+                text-decoration: none;
+                color: #121212d6;
+                font-size: 3.5vh;
+                display: inline-block;
+                margin-bottom: 3vh;
+            }
+
+            a::after {
+                content: "";
+                width: 0;
+                height: 2px;
+                background-color: #121212d6;
+                display: block;
+                transition: width 0.5s;
+            }
+
+            a:hover::after {
+                width: 100%;
+            }
         }
     }
 
@@ -393,7 +419,7 @@ section {
         justify-content: flex-start;
 
         img {
-            width: 30vw;
+            width: 28vw;
         }
 
         .tree {

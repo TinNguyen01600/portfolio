@@ -27,7 +27,7 @@ const Work = () => {
                             position="right center"
                             contentStyle={popupStyles}
                         >
-                            <div className='detail'>
+                            <div>
                                 <i>07.2022 - 10.2022 &ensp; Ho Chi Minh city, Vietnam.</i>
                                 <h4>Main tasks:</h4>
                                 <ul>
@@ -36,6 +36,10 @@ const Work = () => {
                                     <li>Develop logic algorithms for MCU programming</li>
                                     <li>Design schematic and PCB for device</li>
                                 </ul>
+                                <h4>Technologies used:</h4>
+                                <p>
+                                    Embedded C/C++; ESP32, Arduino; LoRa WAN, RTOS; Altium designer
+                                </p>
                             </div>
                         </Popup>
                     </div>
@@ -56,7 +60,7 @@ const Work = () => {
                             position="right center"
                             contentStyle={popupStyles}
                         >
-                            <div className='detail'>
+                            <div>
                                 <i>01.2023 - 05.2023 &ensp; Vaasa, Finland.</i>
                                 <h4>Main tasks:</h4>
                                 <ul>
@@ -65,6 +69,11 @@ const Work = () => {
                                     <li>Maintain and improve users' experience</li>
                                     <li>Identifying and fixing performance issues</li>
                                 </ul>
+                                <h4>Technologies used:</h4>
+                                <p>
+                                    Python, Linux, Docker; Agile methodology (Confluence);
+                                    VCS (Gitlab, BitBucket); Raster Image
+                                </p>
                             </div>
                         </Popup>
                     </div>
