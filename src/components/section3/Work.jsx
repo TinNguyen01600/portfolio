@@ -1,5 +1,8 @@
 import CloseButton from './CloseButton'
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 import laptop from '../../img/section3/laptop.png'
+import { motion } from 'framer-motion';
 
 const Work = () => {
     return (
@@ -11,25 +14,73 @@ const Work = () => {
                         <svg width='2vw' height='12vh'>
                             <circle cx='0' cy='6vh' r={10} fill="red" />
                         </svg>
-                        <div className='text'>
-                            <h1>Embedded Software Intern</h1>
-                            <p>TMA Software Solutions Limited</p>
-                        </div>
+                        <Popup
+                            trigger={
+                                <motion.div
+                                    className='text'
+                                    whileHover={{ scale: 1.05 }}
+                                >
+                                    <h1>Embedded Software Intern</h1>
+                                    <mark>TMA Software Solutions Limited</mark>
+                                </motion.div>
+                            }
+                            position="right center"
+                            contentStyle={popupStyles}
+                        >
+                            <div className='detail'>
+                                <i>07.2022 - 10.2022 &ensp; Ho Chi Minh city, Vietnam.</i>
+                                <h4>Main tasks:</h4>
+                                <ul>
+                                    <li>Reading up on the ESP32 micro-controller</li>
+                                    <li>Learnt LoRaWAN protocol and Altium design</li>
+                                    <li>Develop logic algorithms for MCU programming</li>
+                                    <li>Design schematic and PCB for device</li>
+                                </ul>
+                            </div>
+                        </Popup>
                     </div>
                     <div className='item'>
                         <svg width='2vw' height='12vh'>
                             <circle cx='0' cy='6vh' r={10} fill="red" />
                         </svg>
-                        <div className='text'>
-                            <h1>Software Designer Talent</h1>
-                            <p>Wapice Ltd.</p>
-                        </div>
+                        <Popup
+                            trigger={
+                                <motion.div
+                                    className='text'
+                                    whileHover={{ scale: 1.05 }}
+                                >
+                                    <h1>Software Designer Talent</h1>
+                                    <mark>Wapice Ltd.</mark>
+                                </motion.div>
+                            }
+                            position="right center"
+                            contentStyle={popupStyles}
+                        >
+                            <div className='detail'>
+                                <i>01.2023 - 05.2023 &ensp; Vaasa, Finland.</i>
+                                <h4>Main tasks:</h4>
+                                <ul>
+                                    <li>Learn Agile methodology & Scrum</li>
+                                    <li>Review project's code base</li>
+                                    <li>Maintain and improve users' experience</li>
+                                    <li>Identifying and fixing performance issues</li>
+                                </ul>
+                            </div>
+                        </Popup>
                     </div>
                 </div>
             </div>
             <CloseButton />
         </div>
     )
+}
+
+const popupStyles = {
+    borderRadius: '15px',
+    width: '34vw',
+    fontSize: '3vh',
+    padding: '1vw 2vw',
+    lineHeight: '4.5vh'
 }
 
 export default Work
