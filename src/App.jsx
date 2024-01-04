@@ -10,6 +10,7 @@ import Work from './components/section3/Work'
 import Footer from './components/section3/Footer'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Education from './components/section3/Education'
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
                         <Route exact path="/" element={<Home />} />
                         <Route path="/about" element={<AboutMe />} />
                         <Route path="/work" element={<Work />} />
+                        <Route path="/education" element={<Education />} />
                     </Routes>
                 </Router>
                 <Footer />
