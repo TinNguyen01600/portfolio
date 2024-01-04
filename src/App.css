@@ -119,25 +119,34 @@ section {
                 margin-bottom: 5vh;
             }
 
-            a {
-                text-decoration: none;
-                color: #121212d6;
-                font-size: 3.5vh;
-                display: inline-block;
-                margin-bottom: 3vh;
-            }
+            p {
+                display: flex;
 
-            a::after {
-                content: "";
-                width: 0;
-                height: 2px;
-                background-color: #121212d6;
-                display: block;
-                transition: width 0.5s;
-            }
+                img {
+                    height: 4vh;
+                    width: 3vw;
+                }
 
-            a:hover::after {
-                width: 100%;
+                a {
+                    text-decoration: none;
+                    color: #121212d6;
+                    font-size: 3.5vh;
+                    display: inline-block;
+                    margin-bottom: 3vh;
+                }
+
+                a::after {
+                    content: "";
+                    width: 0;
+                    height: 2px;
+                    background-color: #121212d6;
+                    display: block;
+                    transition: width 0.5s;
+                }
+
+                a:hover::after {
+                    width: 100%;
+                }
             }
         }
     }
