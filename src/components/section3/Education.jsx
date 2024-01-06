@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import CloseButton from "./CloseButton";
 
 const variants = {
     open: {
@@ -14,7 +15,10 @@ const Education = () => {
     return (
         <motion.div className="education" animate="open">
             <motion.div className="bg" variants={variants}>
-                Education
+                <div className="main">
+                    Education
+                </div>
+                <CloseButton />
             </motion.div>
         </motion.div>
     )
