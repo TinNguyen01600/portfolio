@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import CloseButton from "./CloseButton";
 import degree from '../../img/section3/degree.svg'
+import award from '../../img/section3/award.svg'
 import certi from '../../img/section3/certi.svg'
 
 const variants = {
@@ -25,12 +26,27 @@ const Education = () => {
                         <div className="item">
                             Network Security
                         </div>
+                        <div className="item">
+                            Full Stack Web Developer
+                        </div>
                     </div>
                     {/***************************************************** */}
                     <div className="middle">
                         <img src={degree} alt="" />
-                        <svg height='50' width='100'>
-                            <line x1="0" y1="30" x2="100" y2="30" stroke="black" strokeWidth='4' />
+                        <svg height='100' width='250'>
+                            <line x1="0" y1="50" x2="250" y2="50" stroke="black" strokeWidth='4' />
+                        </svg>
+                        <img src={award} alt="" />
+                        <svg height='100' width='220'>
+                            <line x1="0" y1="50" x2="220" y2="50" stroke="black" strokeWidth='4' />
+                        </svg>
+                        <img src={award} alt="" />
+                        <svg height='100' width='180'>
+                            <line x1="0" y1="50" x2="180" y2="50" stroke="black" strokeWidth='4' />
+                        </svg>
+                        <img src={award} alt="" />
+                        <svg height='100' width='200'>
+                            <line x1="0" y1="50" x2="200" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
                         <img src={certi} alt="" />
                     </div>
