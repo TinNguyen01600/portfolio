@@ -3,6 +3,7 @@ import CloseButton from "./CloseButton";
 import degree from '../../img/section3/degree.svg'
 import award from '../../img/section3/award.svg'
 import certi from '../../img/section3/certi.svg'
+import { useState } from "react";
 
 const variants = {
     open: {
@@ -15,10 +16,28 @@ const variants = {
 };
 
 const Education = () => {
+    const [isOpenBachelor, setIsOpenBachelor] = useState(true)
+    const [isOpenNetSec, setIsOpenNetSec] = useState(true)
+    const [isOpenFullstack, setIsOpenFullstack] = useState(true)
+    const [isOpenPython, setIsOpenPython] = useState(true)
+    const [isOpenAI, setIsOpenAI] = useState(true)
+
     return (
         <motion.div className="education" animate="open">
             <motion.div className="bg" variants={variants}>
                 <div className="main">
+                    <div className="upper-detail">
+                        {isOpenBachelor && <div className="item">
+                            Bachelor Degree in Information Technology
+                        </div>}
+                        {isOpenNetSec && <div className="item">
+                            Network Security
+                        </div>}
+                        {isOpenFullstack && <div className="item">
+                            Full Stack Web Developer
+                        </div>}
+                    </div>
+                    {/***************************************************** */}
                     <div className="upper">
                         <div className="item">
                             Bachelor Degree in Information Technology
@@ -58,6 +77,15 @@ const Education = () => {
                         <div className="item">
                             AI - Machine Learning
                         </div>
+                    </div>
+                    {/***************************************************** */}
+                    <div className="lower-detail">
+                        {isOpenPython && <div className="item">
+                            Python Bootcamp
+                        </div>}
+                        {isOpenAI && <div className="item">
+                            AI - Machine Learning
+                        </div>}
                     </div>
                 </div>
                 <CloseButton />

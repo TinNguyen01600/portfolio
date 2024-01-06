@@ -505,6 +505,8 @@ section {
                 font-size: 4vh;
                 column-gap: 28%;
                 margin-left: 1vw;
+                border: 2px solid black;
+
             }
 
             .lower {
@@ -515,10 +517,28 @@ section {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin-left: 2.5vw;
+                padding-left: 2.5vw;
                 img {
                     height: 10vh;
                 }
+            }
+
+            .upper-detail, .lower-detail {
+                border: 2px solid black;
+                width: 100%;
+                display: flex;
+                font-size: 3vh;
+                
+                .item {
+                    padding: 1vh;
+                    border-radius: 5px;
+                    border: 2px solid black;
+                }
+            }
+
+            .upper-detail {
+                justify-content: space-between;
+                margin-left: 1vw;
             }
         }
     }
