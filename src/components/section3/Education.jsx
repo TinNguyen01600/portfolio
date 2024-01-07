@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import CloseButton from "./CloseButton";
 import degree from '../../img/section3/degree.svg'
 import award from '../../img/section3/award.svg'
@@ -16,9 +16,9 @@ const variants = {
 };
 
 const Education = () => {
-    const [isOpenBachelor, setIsOpenBachelor] = useState(true)
+    const [isOpenBachelor, setIsOpenBachelor] = useState(false)
     const [isOpenNetSec, setIsOpenNetSec] = useState(false)
-    const [isOpenFullstack, setIsOpenFullstack] = useState(true)
+    const [isOpenFullstack, setIsOpenFullstack] = useState(false)
     const [isOpenPython, setIsOpenPython] = useState(true)
     const [isOpenAI, setIsOpenAI] = useState(true)
 
@@ -27,28 +27,47 @@ const Education = () => {
             <motion.div className="bg" variants={variants}>
                 <div className="main">
                     <div className="upper-detail">
-                        {isOpenBachelor && <div className="item">
-                            <h4>Vaasa University of Applied Sciences</h4>
-                            <h4>Vaasan Ammattikorkeakoulu (VAMK)</h4>
-                            <p><i>09.2019 - 06.2023</i></p>
-                            <p>I worked hard in my studies and finished the degree with considerably good grades
-                                My major is Embedded System Engineer, concentrated on Object Oriented Programming (C/C++), RTOS,
-                                Microcontrollers & FPGA, Digital & Embedded System Design and Electronics
-                            </p>
-                        </div>}
-                        <motion.div
-                            className="item"
-                            initial={{ opacity: 0 }}
-                            animate={isOpenNetSec && {
-                                opacity: 1
-                            }}
-                        >
-                            <h4>Cisco Network Academy</h4>
-                        </motion.div>
-                        {isOpenFullstack && <div className="item">
-                            <h4>Integrify Oy</h4>
-                        </div>}
+                        <AnimatePresence mode="popLayout">
+                            {isOpenBachelor && <motion.div
+                                className="item"
+                                initial={{ opacity: 0, y: 100 }}
+                                exit={{ opacity: 0, y: 100 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, ease: "linear" }}
+                            >
+                                <h4>Vaasa University of Applied Sciences</h4>
+                                <h4>Vaasan Ammattikorkeakoulu (VAMK)</h4>
+                                <p><i>09.2019 - 06.2023</i></p>
+                                <p>I worked hard in my studies and finished the degree with considerably good grades
+                                    My major is Embedded System Engineer, concentrated on Object Oriented Programming (C/C++), RTOS,
+                                    Microcontrollers & FPGA, Digital & Embedded System Design and Electronics
+                                </p>
+                            </motion.div>}
+                        </AnimatePresence>
+                        <AnimatePresence mode="popLayout">
+                            {isOpenNetSec && <motion.div
+                                className="item"
+                                initial={{ opacity: 0, y: 100 }}
+                                exit={{ opacity: 0, y: 100 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, ease: "linear" }}
+                            >
+                                <h4>Cisco Network Academy</h4>
+                            </motion.div>}
+                        </AnimatePresence>
+                        <AnimatePresence mode="popLayout">
+                            {isOpenFullstack && <motion.div
+                                className="item"
+                                initial={{ opacity: 0, y: 100 }}
+                                exit={{ opacity: 0, y: 100 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, ease: "linear" }}
+                            >
+                                <h4>Integrify Oy</h4>
+                            </motion.div>}
+                        </AnimatePresence>
                     </div>
+
                     {/***************************************************** */}
                     <div className="upper">
                         <div className="item">
@@ -63,7 +82,7 @@ const Education = () => {
                     </div>
                     {/***************************************************** */}
                     <div className="middle">
-                        <img src={degree} alt="" />
+                        <img src={degree} alt="" onClick={() => { setIsOpenBachelor(!isOpenBachelor) }} />
                         <svg height='100' width='250'>
                             <line x1="0" y1="50" x2="250" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
@@ -71,7 +90,7 @@ const Education = () => {
                         <svg height='100' width='220'>
                             <line x1="0" y1="50" x2="220" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
-                        <img src={award} alt="" onClick={() => {setIsOpenNetSec(!isOpenNetSec)}}/>
+                        <img src={award} alt="" onClick={() => { setIsOpenNetSec(!isOpenNetSec) }} />
                         <svg height='100' width='180'>
                             <line x1="0" y1="50" x2="180" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
@@ -79,7 +98,7 @@ const Education = () => {
                         <svg height='100' width='200'>
                             <line x1="0" y1="50" x2="200" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
-                        <img src={certi} alt="" />
+                        <img src={certi} alt="" onClick={() => {setIsOpenFullstack(!isOpenFullstack)}}/>
                     </div>
                     {/***************************************************** */}
                     <div className="lower">
@@ -106,7 +125,7 @@ const Education = () => {
                 </div>
                 <CloseButton />
             </motion.div>
-        </motion.div>
+        </motion.div >
     )
 }
 
