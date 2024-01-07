@@ -15,57 +15,78 @@ const variants = {
     },
 };
 
+const lowVariant = {
+    'open': {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5, ease: 'linear' }
+    },
+    'close': {
+        opacity: 0,
+        y: -100,
+        transition: { duration: 0.5, ease: 'linear' }
+    }
+}
+
+const upVariant = {
+    'open': {
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.5, ease: 'linear' }
+    },
+    'close': {
+        opacity: 0,
+        y: 100,
+        transition: { duration: 0.5, ease: 'linear' }
+    }
+}
+
 const Education = () => {
     const [isOpenBachelor, setIsOpenBachelor] = useState(false)
     const [isOpenNetSec, setIsOpenNetSec] = useState(false)
     const [isOpenFullstack, setIsOpenFullstack] = useState(false)
-    const [isOpenPython, setIsOpenPython] = useState(true)
-    const [isOpenAI, setIsOpenAI] = useState(true)
+    const [isOpenPython, setIsOpenPython] = useState(false)
+    const [isOpenAI, setIsOpenAI] = useState(false)
 
     return (
         <motion.div className="education" animate="open">
             <motion.div className="bg" variants={variants}>
                 <div className="main">
                     <div className="upper-detail">
-                        <AnimatePresence mode="popLayout">
-                            {isOpenBachelor && <motion.div
-                                className="item"
-                                initial={{ opacity: 0, y: 100 }}
-                                exit={{ opacity: 0, y: 100 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, ease: "linear" }}
-                            >
-                                <h4>Vaasa University of Applied Sciences</h4>
-                                <h4>Vaasan Ammattikorkeakoulu (VAMK)</h4>
-                                <p><i>09.2019 - 06.2023</i></p>
-                                <p>I worked hard in my studies and finished the degree with considerably good grades
-                                    My major is Embedded System Engineer, concentrated on Object Oriented Programming (C/C++), RTOS,
-                                    Microcontrollers & FPGA, Digital & Embedded System Design and Electronics
-                                </p>
-                            </motion.div>}
-                        </AnimatePresence>
-                        <AnimatePresence mode="popLayout">
-                            {isOpenNetSec && <motion.div
-                                className="item"
-                                initial={{ opacity: 0, y: 100 }}
-                                exit={{ opacity: 0, y: 100 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, ease: "linear" }}
-                            >
-                                <h4>Cisco Network Academy</h4>
-                            </motion.div>}
-                        </AnimatePresence>
-                        <AnimatePresence mode="popLayout">
-                            {isOpenFullstack && <motion.div
-                                className="item"
-                                initial={{ opacity: 0, y: 100 }}
-                                exit={{ opacity: 0, y: 100 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, ease: "linear" }}
-                            >
-                                <h4>Integrify Oy</h4>
-                            </motion.div>}
-                        </AnimatePresence>
+                        <motion.div
+                            className="item"
+                            initial='close'
+                            animate={isOpenBachelor ? 'open' : 'close'}
+                            variants={upVariant}
+                        >
+                            <h4>Vaasa University of Applied Sciences</h4>
+                            <h4>Vaasan Ammattikorkeakoulu (VAMK)</h4>
+                            <p><i>09.2019 - 06.2023</i></p>
+                            <p>I worked hard in my studies and finished the degree with considerably good grades
+                                My major is Embedded System Engineer, concentrated on Object Oriented Programming (C/C++), RTOS,
+                                Microcontrollers & FPGA, Digital & Embedded System Design and Electronics
+                            </p>
+                        </motion.div>
+                        <motion.div
+                            className="item"
+                            initial='close'
+                            animate={isOpenNetSec ? 'open' : 'close'}
+                            variants={upVariant}
+                        >
+                            <p><b>Cisco Network Academy</b>&ensp;<i>01.2022 - 03.2022</i></p>
+                            <p>The CyberOps Associate certificate program tests the day-to-day,
+                                tactical knowledge and skills Security Operations Center teams
+                                need to detect and respond to cybersecurity threats.
+                            </p>
+                        </motion.div>
+                        <motion.div
+                            className="item"
+                            initial='close'
+                            animate={isOpenFullstack ? 'open' : 'close'}
+                            variants={upVariant}
+                        >
+                            <h4>Integrify Oy</h4>
+                        </motion.div>
                     </div>
 
                     {/***************************************************** */}
@@ -86,7 +107,7 @@ const Education = () => {
                         <svg height='100' width='250'>
                             <line x1="0" y1="50" x2="250" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
-                        <img src={award} alt="" />
+                        <img src={award} alt="" onClick={() => { setIsOpenPython(!isOpenPython) }} />
                         <svg height='100' width='220'>
                             <line x1="0" y1="50" x2="220" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
@@ -94,11 +115,11 @@ const Education = () => {
                         <svg height='100' width='180'>
                             <line x1="0" y1="50" x2="180" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
-                        <img src={award} alt="" />
+                        <img src={award} alt="" onClick={() => { setIsOpenAI(!isOpenAI) }} />
                         <svg height='100' width='200'>
                             <line x1="0" y1="50" x2="200" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
-                        <img src={certi} alt="" onClick={() => {setIsOpenFullstack(!isOpenFullstack)}}/>
+                        <img src={certi} alt="" onClick={() => { setIsOpenFullstack(!isOpenFullstack) }} />
                     </div>
                     {/***************************************************** */}
                     <div className="lower">
@@ -111,16 +132,26 @@ const Education = () => {
                     </div>
                     {/***************************************************** */}
                     <div className="lower-detail">
-                        {isOpenPython && <div className="item">
+                        <motion.div
+                            className="item"
+                            initial='close'
+                            animate={isOpenPython ? 'open' : 'close'}
+                            variants={lowVariant}
+                        >
                             <p><b>Udemy Course</b>&ensp;<i>03.2023 - 05.2023</i></p>
                             <p>This course provided well-structured knowledge and useful Python concept during my internship at Wapice Ltd.
                                 I was recommended the course by both my mentor and project manager.</p>
-                        </div>}
-                        {isOpenAI && <div className="item">
+                        </motion.div>
+                        <motion.div
+                            className="item"
+                            initial='close'
+                            animate={isOpenAI ? 'open' : 'close'}
+                            variants={lowVariant}
+                        >
                             <p><b>University of Helsinki</b>&ensp;<i>06.2023 - 08.2023</i></p>
                             <p>Introduction to AI is a online course for everyone interested in learning what AI is,
                                 what is possible (and not possible) with AI, and how it affects our lives</p>
-                        </div>}
+                        </motion.div>
                     </div>
                 </div>
                 <CloseButton />
