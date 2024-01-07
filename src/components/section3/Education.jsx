@@ -23,7 +23,7 @@ const lowVariant = {
     },
     'close': {
         opacity: 0,
-        y: -100,
+        y: -50,
         transition: { duration: 0.5, ease: 'linear' }
     }
 }
@@ -36,7 +36,7 @@ const upVariant = {
     },
     'close': {
         opacity: 0,
-        y: 100,
+        y: 50,
         transition: { duration: 0.5, ease: 'linear' }
     }
 }
@@ -70,32 +70,34 @@ const Education = () => {
                         <motion.div
                             className="item"
                             initial='close'
-                            animate={isOpenNetSec ? 'open' : 'close'}
+                            animate={isOpenPython ? 'open' : 'close'}
                             variants={upVariant}
+                            style={{ height: '20vh' }}
                         >
-                            <p><b>Cisco Network Academy</b>&ensp;<i>01.2022 - 03.2022</i></p>
-                            <p>The CyberOps Associate certificate program tests the day-to-day,
-                                tactical knowledge and skills Security Operations Center teams
-                                need to detect and respond to cybersecurity threats.
-                            </p>
+                            <p><b>Udemy Course</b>&ensp;<i>03.2023 - 05.2023</i></p>
+                            <p>This course provided well-structured knowledge and useful Python concept during my internship at Wapice Ltd.
+                                I was recommended the course by both my mentor and project manager.</p>
                         </motion.div>
                         <motion.div
                             className="item"
                             initial='close'
                             animate={isOpenFullstack ? 'open' : 'close'}
                             variants={upVariant}
+                            style={{ height: '20vh' }}
                         >
-                            <h4>Integrify Oy</h4>
+                            <p><b>Integrify Oy</b>&ensp;<i>01.2024 - Current</i></p>
+                            <p>Software development company that provides recruitment,
+                                IT consulting services and Web developing training.
+                            </p>
                         </motion.div>
                     </div>
-
                     {/***************************************************** */}
                     <div className="upper">
                         <div className="item">
                             Bachelor Degree in Information Technology
                         </div>
                         <div className="item">
-                            Network Security
+                            Python Bootcamp
                         </div>
                         <div className="item">
                             Full Stack Web Developer
@@ -107,11 +109,11 @@ const Education = () => {
                         <svg height='100' width='250'>
                             <line x1="0" y1="50" x2="250" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
-                        <img src={award} alt="" onClick={() => { setIsOpenPython(!isOpenPython) }} />
+                        <img src={award} alt="" onClick={() => { setIsOpenNetSec(!isOpenNetSec) }} />
                         <svg height='100' width='220'>
                             <line x1="0" y1="50" x2="220" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
-                        <img src={award} alt="" onClick={() => { setIsOpenNetSec(!isOpenNetSec) }} />
+                        <img src={award} alt="" onClick={() => { setIsOpenPython(!isOpenPython) }} />
                         <svg height='100' width='180'>
                             <line x1="0" y1="50" x2="180" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
@@ -124,7 +126,7 @@ const Education = () => {
                     {/***************************************************** */}
                     <div className="lower">
                         <div className="item">
-                            Python Bootcamp
+                            Network Security
                         </div>
                         <div className="item">
                             AI - Machine Learning
@@ -135,12 +137,14 @@ const Education = () => {
                         <motion.div
                             className="item"
                             initial='close'
-                            animate={isOpenPython ? 'open' : 'close'}
+                            animate={isOpenNetSec ? 'open' : 'close'}
                             variants={lowVariant}
                         >
-                            <p><b>Udemy Course</b>&ensp;<i>03.2023 - 05.2023</i></p>
-                            <p>This course provided well-structured knowledge and useful Python concept during my internship at Wapice Ltd.
-                                I was recommended the course by both my mentor and project manager.</p>
+                            <p><b>Cisco Network Academy</b>&ensp;<i>01.2022 - 03.2022</i></p>
+                            <p>Mandatory course from VAMK curriculum.</p>
+                            <p>The CyberOps Associate certificate program tests tactical knowledge and skills
+                                needed to detect and respond to cybersecurity threats.
+                            </p>
                         </motion.div>
                         <motion.div
                             className="item"
