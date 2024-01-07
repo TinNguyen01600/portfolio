@@ -105,23 +105,48 @@ const Education = () => {
                     </div>
                     {/***************************************************** */}
                     <div className="middle">
-                        <img src={degree} alt="" onClick={() => { setIsOpenBachelor(!isOpenBachelor) }} />
+                        <motion.img
+                            src={degree}
+                            alt=""
+                            onClick={() => { setIsOpenBachelor(!isOpenBachelor) }}
+                            whileHover={{ scale: 1.2, cursor: 'pointer' }}
+                        />
                         <svg height='100' width='250'>
                             <line x1="0" y1="50" x2="250" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
-                        <img src={award} alt="" onClick={() => { setIsOpenNetSec(!isOpenNetSec) }} />
+                        <motion.img
+                            src={award}
+                            alt=""
+                            onClick={() => { setIsOpenNetSec(!isOpenNetSec) }}
+                            whileHover={{ scale: 1.2, cursor: 'pointer' }}
+                        />
                         <svg height='100' width='220'>
                             <line x1="0" y1="50" x2="220" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
-                        <img src={award} alt="" onClick={() => { setIsOpenPython(!isOpenPython) }} />
+                        <motion.img
+                            src={award}
+                            alt=""
+                            onClick={() => { setIsOpenPython(!isOpenPython) }}
+                            whileHover={{ scale: 1.2, cursor: 'pointer' }}
+                        />
                         <svg height='100' width='180'>
                             <line x1="0" y1="50" x2="180" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
-                        <img src={award} alt="" onClick={() => { setIsOpenAI(!isOpenAI) }} />
+                        <motion.img
+                            src={award}
+                            alt=""
+                            onClick={() => { setIsOpenAI(!isOpenAI) }}
+                            whileHover={{ scale: 1.2, cursor: 'pointer' }}
+                        />
                         <svg height='100' width='200'>
                             <line x1="0" y1="50" x2="200" y2="50" stroke="black" strokeWidth='4' />
                         </svg>
-                        <img src={certi} alt="" onClick={() => { setIsOpenFullstack(!isOpenFullstack) }} />
+                        <motion.img
+                            src={certi}
+                            alt=""
+                            onClick={() => { setIsOpenFullstack(!isOpenFullstack) }}
+                            whileHover={{ scale: 1.2, cursor: 'pointer' }}
+                        />
                     </div>
                     {/***************************************************** */}
                     <div className="lower">
