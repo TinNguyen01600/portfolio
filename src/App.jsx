@@ -1,4 +1,6 @@
-import './App.css'
+import './CSS/App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Banner from './components/section1/Banner'
 import Header from './components/section1/Header'
 import Sidebar from './components/section1/sidebar/Sidebar'
@@ -8,8 +10,6 @@ import Home from './components/section3/Home'
 import AboutMe from './components/section3/AboutMe'
 import Work from './components/section3/Work'
 import Footer from './components/section3/Footer'
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Education from './components/section3/Education'
 
 function App() {

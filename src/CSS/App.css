@@ -21,7 +21,7 @@ section {
 
 /*******************************************************************/
 .section-1 {
-    background: url('./img/section1/banner.jpg') no-repeat center center/cover;
+    background: url('../img/section1//banner.jpg') no-repeat center center/cover;
 }
 
 /*******************************************************************/
@@ -226,7 +226,7 @@ section {
     }
 
     .earth {
-        background-image: url('./img/section2/earth.png');
+        background-image: url('../img/section2/earth.png');
         background-size: cover;
         background-position: center;
         width: 100%;
@@ -235,7 +235,7 @@ section {
     }
 
     .stars {
-        background-image: url('./img/section2/stars.png');
+        background-image: url('../img/section2/stars.png');
         background-size: cover;
         background-position: bottom;
         width: 100%;
@@ -267,7 +267,7 @@ section {
 /*******************************************************************/
 /*******************************************************************/
 .section-3 {
-    background: url('./img/section3/bulbs.jpg') no-repeat center center/cover;
+    background: url('../img/section3/bulbs.jpg') no-repeat center center/cover;
     display: flex;
     flex-wrap: wrap;
 
