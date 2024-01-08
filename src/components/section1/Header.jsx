@@ -38,7 +38,6 @@ const Header = () => {
                 </a>
                 <ConnectButton />
             </div>
-
         </div>
     )
 }

@@ -6,12 +6,6 @@ html {
     scroll-behavior: smooth;
 }
 
-section {
-    height: 100vh;
-    scroll-snap-align: center;
-    background-color: #161616;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -19,9 +13,10 @@ section {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*******************************************************************/
-.section-1 {
-    background: url('../img/section1//banner.jpg') no-repeat center center/cover;
+section {
+    height: 100vh;
+    scroll-snap-align: center;
+    background-color: #161616;
 }
 
 /*******************************************************************/
@@ -29,6 +24,13 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    /*******************************************************************/
+    .bird {
+        width: 15vh;
+        height: 15vh;
+        margin-left: 1.5vw;
+    }
 
     /*******************************************************************/
     .header-btn-ctn {
@@ -42,13 +44,6 @@ section {
             width: 3vw;
             height: 3vw;
         }
-    }
-
-    /*******************************************************************/
-    .bird {
-        width: 15vh;
-        height: 15vh;
-        margin-left: 1.5vw;
     }
 }
 

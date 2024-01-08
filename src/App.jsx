@@ -1,4 +1,5 @@
 import './CSS/App.css'
+import './CSS/section1/section1.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Banner from './components/section1/Banner'
