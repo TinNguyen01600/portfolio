@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import '../../CSS/section1/Banner.css'
 
 const boxVariant = {
     initial: { x: '300vw' },

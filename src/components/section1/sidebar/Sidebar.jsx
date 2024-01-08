@@ -1,3 +1,4 @@
+import '../../../CSS/section1/Sidebar.css'
 import { useState } from "react"
 import Links from "./Links"
 import ToggleButton from "./ToggleButton"
