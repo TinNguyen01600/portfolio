@@ -1,6 +1,6 @@
-import CloseButton from './CloseButton'
+import CloseButton from '../CloseButton'
 import { motion } from 'framer-motion'
-import '../../CSS/section3/skills/Skills.css'
+import '../../../CSS/section3/skills/Skills.css'
 
 const variants = {
     open: {

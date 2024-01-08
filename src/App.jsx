@@ -12,7 +12,7 @@ import AboutMe from './components/section3/AboutMe'
 import Work from './components/section3/Work'
 import Footer from './components/section3/Footer'
 import Education from './components/section3/Education'
-import Skills from './components/section3/Skills';
+import Skills from './components/section3/Skills/Skills';
 
 function App() {
     return (
