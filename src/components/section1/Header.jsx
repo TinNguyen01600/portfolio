@@ -1,3 +1,4 @@
+import '../../CSS/section1/Header.css'
 import ConnectButton from "./ConnectButton"
 import bird from '../../img/section1/bird.png'
 import linkedin from '../../img/section1/linkedin.svg'

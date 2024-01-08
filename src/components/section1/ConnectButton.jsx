@@ -1,3 +1,5 @@
+import '../../CSS/section1/ConnectButton.css'
+
 const ConnectButton = () => {
     return (
         <>
