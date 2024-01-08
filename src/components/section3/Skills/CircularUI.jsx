@@ -1,3 +1,4 @@
+import '../../../CSS/section3/skills/CircularUI.css'
 import { motion } from "framer-motion";
 
 export default function App() {
