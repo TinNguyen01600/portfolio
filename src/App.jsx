@@ -12,6 +12,7 @@ import AboutMe from './components/section3/AboutMe'
 import Work from './components/section3/Work'
 import Footer from './components/section3/Footer'
 import Education from './components/section3/Education'
+import Skills from './components/section3/Skills';
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
                         <Route path="/about" element={<AboutMe />} />
                         <Route path="/work" element={<Work />} />
                         <Route path="/education" element={<Education />} />
+                        <Route path="/skills" element={<Skills />} />
                     </Routes>
                 </Router>
                 <Footer />
