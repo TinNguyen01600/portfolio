@@ -1,3 +1,5 @@
+import cpp from '../../../img/section3/skills/cpp.png'
+
 export const webDev = [
     {
         id: 0,
@@ -8,12 +10,12 @@ export const webDev = [
 
 export const embeddedSys = [
     {
-        id: 0,
+        id: 1,
         name: 'C++',
-        img: ''
+        img: cpp
     },
     {
-        id: 1,
+        id: 2,
         name: 'ESP32',
         img: ''
     }

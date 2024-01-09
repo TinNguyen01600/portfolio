@@ -3,13 +3,28 @@ import { motion } from "framer-motion";
 import CenterRotateWheel from './CenterRotateWheel';
 import ImageBox from './ImageBox';
 
-const CircularUI = () => {
+const CircularUI = ({ skillSet }) => {
     return (
         <div className="container">
             <div className="icons">
-                <ImageBox i={0} />
+                {/* <ImageBox i={0} /> */}
 
-                <motion.div
+                {skillSet.map(skill => (
+                    <motion.div
+                        className="imgBx"
+                        style={{ "--i": skill.id }}
+                        whileHover={{
+                            boxShadow: "0 0 0 4px red",
+                            filter: "grayscale(0)",
+                        }}
+                    >
+                        <img
+                            src={skill.img}
+                            alt=""
+                        />
+                    </motion.div>
+                ))}
+                {/* <motion.div
                     className="imgBx"
                     style={{ "--i": 1 }}
                     whileHover={{
@@ -47,7 +62,7 @@ const CircularUI = () => {
                         src="https://1.bp.blogspot.com/-X5OBU37Ims4/XQexxebsV0I/AAAAAAAAD80/PlMIGUQBY3YwRugZNLvdRaI2Pw_g0jIlgCLcBGAs/s1600/Python%2BProgramming%2BLogo.png"
                         alt=""
                     />
-                </motion.div>
+                </motion.div> */}
             </div>
 
             <CenterRotateWheel

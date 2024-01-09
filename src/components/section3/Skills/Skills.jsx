@@ -1,6 +1,7 @@
 import CloseButton from '../CloseButton'
 import { motion } from 'framer-motion'
 import '../../../CSS/section3/skills/Skills.css'
+import { embeddedSys } from './skillSets.js'
 
 import CircularUI from '../Skills/CircularUI.jsx'
 
@@ -19,7 +20,7 @@ const Skills = () => {
         <motion.div className="skills" animate="open">
             <motion.div className="bg" variants={variants}>
                 <div className='main'>
-                    <CircularUI />
+                    <CircularUI skillSet={embeddedSys}/>
                 </div>
                 <CloseButton color='white'/>
             </motion.div>
