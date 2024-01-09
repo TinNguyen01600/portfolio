@@ -1,4 +1,4 @@
-const webDev = [
+export const webDev = [
     {
         id: 0,
         name: 'HTML',
@@ -6,7 +6,7 @@ const webDev = [
     }
 ]
 
-const embeddedSys = [
+export const embeddedSys = [
     {
         id: 0,
         name: 'C++',

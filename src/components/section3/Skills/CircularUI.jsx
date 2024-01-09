@@ -1,25 +1,14 @@
 import '../../../CSS/section3/skills/CircularUI.css'
 import { motion } from "framer-motion";
 import CenterRotateWheel from './CenterRotateWheel';
+import ImageBox from './ImageBox';
 
 const CircularUI = () => {
     return (
         <div className="container">
             <div className="icons">
-                <motion.div
-                    className="imgBx"
-                    style={{ "--i": 0 }}
-                    data
-                    whileHover={{
-                        boxShadow: "0 0 0 4px red",
-                        filter: "grayscale(0)",
-                    }}
-                >
-                    <img
-                        src="https://th.bing.com/th/id/OIP._Mq1T1IJe6cw14lre2cBzgHaE8?rs=1&pid=ImgDetMain"
-                        alt=""
-                    />
-                </motion.div>
+                <ImageBox i={0} />
+
                 <motion.div
                     className="imgBx"
                     style={{ "--i": 1 }}
