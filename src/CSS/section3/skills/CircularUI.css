@@ -1,7 +1,7 @@
 .container {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 29vw;
+    height: 29vw;
     border: 2px solid white;
     border-radius: 50%;
 
@@ -16,13 +16,13 @@
 
         .imgBx {
             position: absolute;
-            width: 100px;
-            height: 100px;
+            width: 5vw;
+            height: 5vw;
             border-radius: 50%;
             border: 1px solid white;
             box-shadow: 0 0 0 4px #222, 0 0 0 6px white;
             transform: rotate(calc(360deg / 4 * var(--i)));
-            transform-origin: 250px;
+            transform-origin: 17vw;
             z-index: 100;
             overflow: hidden;
 
@@ -46,15 +46,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
     }
-    
+
     .content::before {
         content: "";
         position: absolute;
@@ -66,77 +59,22 @@
         z-index: 1;
         pointer-events: none;
     }
-}
 
-/****************************************/
-/* .content1 {
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content1::before {
-    content: "";
-    position: absolute;
-    inset: 50px;
-    border: 4px solid transparent;
-    border-left: 4px solid blue;
-    border-right: 4px solid black;
-    border-radius: 50%;
-    z-index: 1;
-    pointer-events: none;
-}
-
-/****************************************/
-/* .content2 {
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-}
-
-.content2::before {
-    content: "";
-    position: absolute;
-    inset: 100px;
-    border: 4px solid transparent;
-    border-left: 4px solid black;
-    border-right: 4px solid red;
-    border-radius: 50%;
-    z-index: 1;
-    pointer-events: none;
-}  */
-
-/****************************************/
-/* .contentBx {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .card {
-        position: relative;
+    .center {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        .imgBx {
-            position: relative;
+        img {
             width: 100px;
             height: 100px;
+            object-fit: cover;
             border-radius: 50%;
-            overflow: hidden;
-
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+            margin-bottom: 2vh;
         }
     }
-} */
+}

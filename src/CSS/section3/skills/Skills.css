@@ -1,5 +1,5 @@
 .skills {
-    height: 90%;
+    height: 92%;
     width: 100%;
 
     .bg {
@@ -7,7 +7,7 @@
         height: 100%;
         width: 100%;
         display: flex;
-        background: whitesmoke;
+        background: black;
 
         .main {
             width: 100%;

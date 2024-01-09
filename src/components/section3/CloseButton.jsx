@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 const CloseButton = () => {
     return (
-
         <button className="close-btn">
             <Link to="/">
                 <svg width='23' height='23' viewBox="0 0 20 20">

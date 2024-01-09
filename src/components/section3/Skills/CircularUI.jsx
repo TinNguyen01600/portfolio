@@ -64,7 +64,7 @@ export default function App() {
                 className="content"
                 style={{
                     '--borderLeftColor': 'blue',
-                    '--borderRightColor': 'black',
+                    '--borderRightColor': 'white',
                     '--inset': '50px'
                 }}
                 animate={{ rotate: [0, 360] }}
@@ -79,7 +79,7 @@ export default function App() {
             <motion.div
                 className="content"
                 style={{
-                    '--borderLeftColor': 'black',
+                    '--borderLeftColor': 'white',
                     '--borderRightColor': 'red',
                     '--inset': '100px'
                 }}
@@ -92,10 +92,7 @@ export default function App() {
                 }}
             />
 
-            <div
-                className="content"
-                style={{'--inset': '150px'}}
-            >
+            <div className="center" >
                 <img
                     src="https://th.bing.com/th/id/OIP._Mq1T1IJe6cw14lre2cBzgHaE8?rs=1&pid=ImgDetMain"
                     alt=""
