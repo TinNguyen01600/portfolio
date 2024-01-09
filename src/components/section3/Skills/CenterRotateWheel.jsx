@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import '../../../CSS/section3/skills/CenterRotateWheel.css'
 
 const CenterRotateWheel = ({ borderLeftColor, borderRightColor, inset, rotateDirection = 'right', duration }) => {
     return (

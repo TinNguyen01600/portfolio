@@ -5,7 +5,7 @@
     border: 2px solid white;
     border-radius: 50%;
 
-    .icon {
+    .icons {
         position: relative;
         left: -50%;
         width: 100%;
@@ -37,27 +37,6 @@
                 transform: rotate(calc(-360deg / 4 * var(--i)));
             }
         }
-    }
-
-    .content {
-        position: absolute;
-        inset: 0;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content::before {
-        content: "";
-        position: absolute;
-        inset: var(--inset);
-        border: 4px solid transparent;
-        border-left: 4px solid var(--borderLeftColor);
-        border-right: 4px solid var(--borderRightColor);
-        border-radius: 50%;
-        z-index: 1;
-        pointer-events: none;
     }
 
     .center {

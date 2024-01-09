@@ -2,10 +2,10 @@ import '../../../CSS/section3/skills/CircularUI.css'
 import { motion } from "framer-motion";
 import CenterRotateWheel from './CenterRotateWheel';
 
-export default function App() {
+const CircularUI = () => {
     return (
         <div className="container">
-            <div className="icon">
+            <div className="icons">
                 <motion.div
                     className="imgBx"
                     style={{ "--i": 0 }}
@@ -65,14 +65,14 @@ export default function App() {
                 borderLeftColor='blue'
                 borderRightColor='white'
                 inset='3vw'
-                duration={3}
+                duration={4}
             />
             <CenterRotateWheel
                 borderLeftColor='white'
                 borderRightColor='red'
                 inset='6vw'
                 rotateDirection='left'
-                duration={4}
+                duration={3}
             />
 
             <div className="center" >
@@ -84,3 +84,5 @@ export default function App() {
         </div>
     );
 }
+
+export default CircularUI
