@@ -21,7 +21,7 @@ const Skills = () => {
                 <div className='main'>
                     <CircularUI />
                 </div>
-                <CloseButton />
+                <CloseButton color='white'/>
             </motion.div>
         </motion.div>
     )

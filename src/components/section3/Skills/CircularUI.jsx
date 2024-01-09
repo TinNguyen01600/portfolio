@@ -1,5 +1,6 @@
 import '../../../CSS/section3/skills/CircularUI.css'
 import { motion } from "framer-motion";
+import CenterRotateWheel from './CenterRotateWheel';
 
 export default function App() {
     return (
@@ -60,36 +61,18 @@ export default function App() {
                 </motion.div>
             </div>
 
-            <motion.div
-                className="content"
-                style={{
-                    '--borderLeftColor': 'blue',
-                    '--borderRightColor': 'white',
-                    '--inset': '50px'
-                }}
-                animate={{ rotate: [0, 360] }}
-                transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    repeatType: "loop",
-                    ease: "linear",
-                }}
+            <CenterRotateWheel
+                borderLeftColor='blue'
+                borderRightColor='white'
+                inset='3vw'
+                duration={3}
             />
-
-            <motion.div
-                className="content"
-                style={{
-                    '--borderLeftColor': 'white',
-                    '--borderRightColor': 'red',
-                    '--inset': '100px'
-                }}
-                animate={{ rotate: [0, -360] }}
-                transition={{
-                    duration: 2.5,
-                    repeat: Infinity,
-                    repeatType: "loop",
-                    ease: "linear",
-                }}
+            <CenterRotateWheel
+                borderLeftColor='white'
+                borderRightColor='red'
+                inset='6vw'
+                rotateDirection='left'
+                duration={4}
             />
 
             <div className="center" >
