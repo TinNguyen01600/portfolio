@@ -1,3 +1,5 @@
+import html from '../../../img/section3/skills/html.png'
+
 import cpp from '../../../img/section3/skills/cpp.png'
 import esp32 from '../../../img/section3/skills/esp32.png'
 import c from '../../../img/section3/skills/c.png'
@@ -11,7 +13,8 @@ export const webDev = [
     {
         id: 0,
         name: 'HTML',
-        img: ''
+        img: html,
+        level: 3
     }
 ]
 

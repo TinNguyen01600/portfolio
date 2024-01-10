@@ -2,13 +2,21 @@ import '../../../CSS/section3/skills/CircularUI.css'
 import CenterRotateWheel from './CenterRotateWheel';
 import ImageBox from './ImageBox';
 import star from '../../../img/section3/skills/star.png'
+import { useState } from 'react';
 
 const CircularUI = ({ skillSet }) => {
+    const [centerSkill, setCenterSkill] = useState(0)
     return (
         <div className="container">
             <div className="icons">
                 {skillSet.map(skill => (
-                    <ImageBox i={skill.id} len={skillSet.length} img={skill.img} />
+                    <ImageBox
+                        key={skill.id}
+                        i={skill.id}
+                        len={skillSet.length}
+                        img={skill.img}
+                        setCenterSkill={setCenterSkill}
+                    />
                 ))}
             </div>
 
@@ -27,12 +35,12 @@ const CircularUI = ({ skillSet }) => {
             />
 
             <div className="center" >
-                <img className='skill-img' src={skillSet[0].img} />
-                <p>{skillSet[0].name}</p>
+                <img className='skill-img' src={skillSet[centerSkill].img} />
+                <p>{skillSet[centerSkill].name}</p>
                 <p className='skill-level'>
-                {[...Array(skillSet[0].level).keys()].map(item => (
-                    <img src={star}/>
-                ))}
+                    {[...Array(skillSet[centerSkill].level).keys()].map(item => (
+                        <img src={star} key={item} />
+                    ))}
                 </p>
             </div>
         </div>
