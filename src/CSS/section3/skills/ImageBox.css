@@ -2,10 +2,11 @@
     position: absolute;
     width: 5vw;
     height: 5vw;
+    background-color: white;
     border-radius: 50%;
     border: 1px solid white;
     box-shadow: 0 0 0 4px #222, 0 0 0 6px white;
-    transform: rotate(calc(360deg / 4 * var(--i)));
+    transform: rotate(calc(360deg / var(--len) * var(--i)));
     transform-origin: 17vw;
     z-index: 100;
     overflow: hidden;
@@ -18,6 +19,6 @@
         height: 100%;
         border-radius: 50%;
         object-fit: cover;
-        transform: rotate(calc(-360deg / 4 * var(--i)));
+        transform: rotate(calc(-360deg / var(--len) * var(--i)));
     }
 }

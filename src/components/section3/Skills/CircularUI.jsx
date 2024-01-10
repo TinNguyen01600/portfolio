@@ -7,62 +7,9 @@ const CircularUI = ({ skillSet }) => {
     return (
         <div className="container">
             <div className="icons">
-                {/* <ImageBox i={0} /> */}
-
                 {skillSet.map(skill => (
-                    <motion.div
-                        className="imgBx"
-                        style={{ "--i": skill.id }}
-                        whileHover={{
-                            boxShadow: "0 0 0 4px red",
-                            filter: "grayscale(0)",
-                        }}
-                    >
-                        <img
-                            src={skill.img}
-                            alt=""
-                        />
-                    </motion.div>
+                    <ImageBox i={skill.id} len={skillSet.length} img={skill.img} />
                 ))}
-                {/* <motion.div
-                    className="imgBx"
-                    style={{ "--i": 1 }}
-                    whileHover={{
-                        boxShadow: "0 0 0 4px red",
-                        filter: "grayscale(0)",
-                    }}
-                >
-                    <img
-                        src="https://m1cr0lab-esp32.github.io/remote-control-with-websocket/logo/thumbnail.png"
-                        alt=""
-                    />
-                </motion.div>
-                <motion.div
-                    className="imgBx"
-                    style={{ "--i": 2 }}
-                    whileHover={{
-                        boxShadow: "0 0 0 4px red",
-                        filter: "grayscale(0)",
-                    }}
-                >
-                    <img
-                        src="https://image.winudf.com/v2/image1/Y29tLm1hcnRpbmxvcmVuLnN0bTMydXRpbHNfaWNvbl8xNTU0ODc2MTg2XzA1Nw/icon.png?w=170&fakeurl=1"
-                        alt=""
-                    />
-                </motion.div>
-                <motion.div
-                    className="imgBx"
-                    style={{ "--i": 3 }}
-                    whileHover={{
-                        boxShadow: "0 0 0 4px red",
-                        filter: "grayscale(0)",
-                    }}
-                >
-                    <img
-                        src="https://1.bp.blogspot.com/-X5OBU37Ims4/XQexxebsV0I/AAAAAAAAD80/PlMIGUQBY3YwRugZNLvdRaI2Pw_g0jIlgCLcBGAs/s1600/Python%2BProgramming%2BLogo.png"
-                        alt=""
-                    />
-                </motion.div> */}
             </div>
 
             <CenterRotateWheel
