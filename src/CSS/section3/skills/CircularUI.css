@@ -24,12 +24,27 @@
         justify-content: center;
         align-items: center;
 
-        img {
-            width: 100px;
-            height: 100px;
+        .skill-img {
+            width: 7vw;
+            height: 7vw;
             object-fit: cover;
             border-radius: 50%;
-            margin-bottom: 2vh;
+            margin-bottom: 1vh;
+            background: #fff;
+        }
+        p {
+            color: aliceblue;
+            font-size: 3vh;
+            text-align: center;
+            width: 10vw;
+        }
+        .skill-level {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 1vw;
+                height: 1vw;
+            }
         }
     }
 }

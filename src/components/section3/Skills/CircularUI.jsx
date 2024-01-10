@@ -1,7 +1,7 @@
 import '../../../CSS/section3/skills/CircularUI.css'
-import { motion } from "framer-motion";
 import CenterRotateWheel from './CenterRotateWheel';
 import ImageBox from './ImageBox';
+import star from '../../../img/section3/skills/star.png'
 
 const CircularUI = ({ skillSet }) => {
     return (
@@ -27,10 +27,13 @@ const CircularUI = ({ skillSet }) => {
             />
 
             <div className="center" >
-                <img
-                    src="https://th.bing.com/th/id/OIP._Mq1T1IJe6cw14lre2cBzgHaE8?rs=1&pid=ImgDetMain"
-                    alt=""
-                />
+                <img className='skill-img' src={skillSet[0].img} />
+                <p>{skillSet[0].name}</p>
+                <p className='skill-level'>
+                {[...Array(skillSet[0].level).keys()].map(item => (
+                    <img src={star}/>
+                ))}
+                </p>
             </div>
         </div>
     );
