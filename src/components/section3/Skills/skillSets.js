@@ -23,6 +23,13 @@ import gitlab from '../../../img/section3/skills/gitlab.png'
 import bitbucket from '../../../img/section3/skills/bitbucket.png'
 import confluence from '../../../img/section3/skills/confluence.png'
 
+import altium from '../../../img/section3/skills/altium.png'
+import lora from '../../../img/section3/skills/lora.png'
+import linux from '../../../img/section3/skills/linux.png'
+import rtos from '../../../img/section3/skills/rtos.png'
+import docker from '../../../img/section3/skills/docker.png'
+import matlab from '../../../img/section3/skills/matlab.png'
+
 export const webDev = [
     {
         id: 0,
@@ -83,7 +90,7 @@ export const others = [
     },
     {
         id: 1,
-        name: 'Git',
+        name: 'Git Version Control System',
         img: git,
         level: 4
     },
@@ -110,6 +117,45 @@ export const others = [
         name: 'Confluence',
         img: confluence,
         level: 2
+    },
+]
+
+export const iot = [
+    {
+        id: 0,
+        name: 'Altium Designer',
+        img: altium,
+        level: 3
+    },
+    {
+        id: 1,
+        name: 'Long Range Wireless Protocol',
+        img: lora,
+        level: 3
+    },
+    {
+        id: 2,
+        name: 'Linux Operating System',
+        img: linux,
+        level: 2
+    },
+    {
+        id: 3,
+        name: 'Real-time operating system',
+        img: rtos,
+        level: 3
+    },
+    {
+        id: 4,
+        name: 'Docker',
+        img: docker,
+        level: 2
+    },
+    {
+        id: 5,
+        name: 'Matlab & Simulink',
+        img: matlab,
+        level: 3
     },
 ]
 
