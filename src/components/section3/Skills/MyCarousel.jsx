@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 
-import { embeddedSys, webDev } from './skillSets.js'
+import { embeddedSys, webDev, others } from './skillSets.js'
 import CircularUI from './CircularUI.jsx'
 
 class CustomSlide extends Component {
@@ -39,10 +39,10 @@ const MyCarousel = () => {
     return (
         <div>
             <Slider {...settings} style={{ width: '90vw' }}>
-                <CustomSlide skillSet={embeddedSys} text='Embedded System' />
                 <CustomSlide skillSet={webDev} text='Web Development' />
-                <CustomSlide skillSet={embeddedSys} text='Automation - IoT' />
-                <CustomSlide skillSet={embeddedSys} text='Other Tech & Tools' />
+                <CustomSlide skillSet={others} text='Other Tech & Tools' />
+                <CustomSlide skillSet={embeddedSys} text='Embedded System' />
+                <CustomSlide skillSet={others} text='Automation - IoT' />
             </Slider>
         </div>
     );

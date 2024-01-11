@@ -16,6 +16,13 @@ import arduino from '../../../img/section3/skills/arduino.png'
 import pcb from '../../../img/section3/skills/pcb.png'
 import schematic from '../../../img/section3/skills/schematic.png'
 
+import vscode from '../../../img/section3/skills/vscode.png'
+import git from '../../../img/section3/skills/git.png'
+import github from '../../../img/section3/skills/github.png'
+import gitlab from '../../../img/section3/skills/gitlab.png'
+import bitbucket from '../../../img/section3/skills/bitbucket.png'
+import confluence from '../../../img/section3/skills/confluence.png'
+
 export const webDev = [
     {
         id: 0,
@@ -65,6 +72,45 @@ export const webDev = [
         img: netlify,
         level: 2
     }
+]
+
+export const others = [
+    {
+        id: 0,
+        name: 'VS Code',
+        img: vscode,
+        level: 4
+    },
+    {
+        id: 1,
+        name: 'Git',
+        img: git,
+        level: 4
+    },
+    {
+        id: 2,
+        name: 'Github',
+        img: github,
+        level: 3
+    },
+    {
+        id: 3,
+        name: 'Gitlab',
+        img: gitlab,
+        level: 3
+    },
+    {
+        id: 4,
+        name: 'BitBucket',
+        img: bitbucket,
+        level: 2
+    },
+    {
+        id: 5,
+        name: 'Confluence',
+        img: confluence,
+        level: 2
+    },
 ]
 
 export const embeddedSys = [
