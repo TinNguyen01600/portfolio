@@ -1,6 +1,7 @@
 import me from '../../img/section3/me.jpg'
 import CloseButton from './CloseButton'
 import { motion } from 'framer-motion'
+import '../../CSS/section3/about.css'
 
 const variants = {
     open: {

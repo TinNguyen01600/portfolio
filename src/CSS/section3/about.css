@@ -1,0 +1,53 @@
+.about-me {
+    height: 90%;
+    width: 100%;
+
+    .bg {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        background: whitesmoke;
+
+        .main {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            img {
+                width: 20vw;
+                height: 47vh;
+                border-radius: 50%;
+                align-self: center;
+                margin: 0 0 0 auto;
+            }
+
+            .text {
+                width: 55%;
+                padding: 3vh 0 3vh 0;
+                border-bottom: 2px solid black;
+                border-top: 2px solid black;
+                line-height: 5vh;
+                align-self: center;
+                margin: auto;
+                font-size: 3vh;
+
+                h1 {
+                    font-size: 6vh;
+                    margin-bottom: 3vh;
+                }
+
+                h3 {
+                    opacity: 0.5;
+                    margin-bottom: 2vh;
+                }
+
+                mark {
+                    color: orange;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}

@@ -29,7 +29,7 @@ class CustomSlide extends Component {
     }
 }
 
-const MyCarousel = () => {
+const SkillCarousel = () => {
     const settings = {
         dots: true,
         infinite: true,
@@ -48,4 +48,4 @@ const MyCarousel = () => {
     );
 }
 
-export default MyCarousel
+export default SkillCarousel
