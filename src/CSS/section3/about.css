@@ -13,41 +13,43 @@
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
+        }
+    }
+}
 
-            img {
-                width: 20vw;
-                height: 47vh;
-                border-radius: 50%;
-                align-self: center;
-                margin: 0 0 0 auto;
-            }
+.about-me .introduction {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
-            .text {
-                width: 55%;
-                padding: 3vh 0 3vh 0;
-                border-bottom: 2px solid black;
-                border-top: 2px solid black;
-                line-height: 5vh;
-                align-self: center;
-                margin: auto;
-                font-size: 3vh;
+    img {
+        width: 20vw;
+        height: 47vh;
+        border-radius: 50%;
+    }
 
-                h1 {
-                    font-size: 6vh;
-                    margin-bottom: 3vh;
-                }
+    .text {
+        width: 55%;
+        padding: 3vh 0 3vh 0;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        line-height: 5vh;
+        font-size: 3vh;
 
-                h3 {
-                    opacity: 0.5;
-                    margin-bottom: 2vh;
-                }
+        h1 {
+            font-size: 6vh;
+            margin-bottom: 3vh;
+        }
 
-                mark {
-                    color: orange;
-                    background: transparent;
-                }
-            }
+        h3 {
+            opacity: 0.5;
+            margin-bottom: 2vh;
+        }
+
+        mark {
+            color: orange;
+            background: transparent;
         }
     }
 }

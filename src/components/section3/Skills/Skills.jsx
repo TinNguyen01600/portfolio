@@ -1,7 +1,7 @@
 import CloseButton from '../CloseButton'
 import { motion } from 'framer-motion'
 import '../../../CSS/section3/skills/Skills.css'
-import MyCarousel from './MyCarousel.jsx'
+import SkillCarousel from './SkillCarousel.jsx'
 
 const variants = {
     open: {
@@ -18,7 +18,7 @@ const Skills = () => {
         <motion.div className="skills" animate="open">
             <motion.div className="bg" variants={variants}>
                 <div className='main'>
-                    <MyCarousel />
+                    <SkillCarousel />
                 </div>
                 <CloseButton color='white' />
             </motion.div>

@@ -3,6 +3,9 @@ import CloseButton from './CloseButton'
 import { motion } from 'framer-motion'
 import '../../CSS/section3/about.css'
 
+import React, { Component } from "react";
+import Slider from "react-slick";
+
 const variants = {
     open: {
         clipPath: 'circle(1000px)',
@@ -12,12 +15,19 @@ const variants = {
         },
     },
 };
+const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+};
 
-const AboutMe = () => {
-    return (
-        <motion.div className="about-me" animate="open">
-            <motion.div className="bg" variants={variants}>
-                <div className='main'>
+class Introduction extends Component {
+    render() {
+        const { skillSet, text, ...props } = this.props;
+        return (
+            <div {...props}>
+                <div className='introduction'>
                     <img src={me} alt="" />
                     <div className="text">
                         <h1>Hello! My name is <mark>Tin Nguyen</mark>.</h1>
@@ -37,6 +47,21 @@ const AboutMe = () => {
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        );
+    }
+}
+
+const AboutMe = () => {
+    return (
+        <motion.div className="about-me" animate="open">
+            <motion.div className="bg" variants={variants}>
+                <div className='main'>
+                    <Slider {...settings} style={{ width: '92vw', paddingBottom: '3vh', marginLeft: '2vw' }}>
+                        <Introduction />
+                        <Introduction />
+                    </Slider>
                 </div>
                 <CloseButton />
             </motion.div>
