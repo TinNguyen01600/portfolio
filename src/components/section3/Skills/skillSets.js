@@ -1,4 +1,11 @@
 import html from '../../../img/section3/skills/html.png'
+import css from '../../../img/section3/skills/css.png'
+import js from '../../../img/section3/skills/js.png'
+import react from '../../../img/section3/skills/react.png'
+import redux from '../../../img/section3/skills/redux.png'
+import netlify from '../../../img/section3/skills/netlify.png'
+import framer_motion from '../../../img/section3/skills/framer-motion.png'
+import mui from '../../../img/section3/skills/mui.png'
 
 import cpp from '../../../img/section3/skills/cpp.png'
 import esp32 from '../../../img/section3/skills/esp32.png'
@@ -15,6 +22,48 @@ export const webDev = [
         name: 'HTML',
         img: html,
         level: 3
+    },
+    {
+        id: 1,
+        name: 'CSS',
+        img: css,
+        level: 3
+    },
+    {
+        id: 2,
+        name: 'JavaScript',
+        img: js,
+        level: 3
+    },
+    {
+        id: 3,
+        name: 'React JS',
+        img: react,
+        level: 3
+    },
+    {
+        id: 4,
+        name: 'Redux Toolkit',
+        img: redux,
+        level: 2
+    },
+    {
+        id: 5,
+        name: 'Framer Motion',
+        img: framer_motion,
+        level: 3
+    },
+    {
+        id: 6,
+        name: 'Material UI',
+        img: mui,
+        level: 3
+    },
+    {
+        id: 7,
+        name: 'Netlify',
+        img: netlify,
+        level: 2
     }
 ]
 

@@ -6,10 +6,24 @@ import CircularUI from './CircularUI.jsx'
 
 class CustomSlide extends Component {
     render() {
-        const { skillSet, ...props } = this.props;
+        const { skillSet, text, ...props } = this.props;
         return (
-            <div {...props} style={{ border: '2px solid red',  }}>
-                <CircularUI skillSet={skillSet}/>
+            <div {...props}>
+                <h1 style={{
+                    textAlign: 'center',
+                    color: 'white',
+                }}
+                >
+                    {text}
+                </h1>
+                <div style={{
+                    padding: '4vw 0 3vw 8vw',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '7vh'
+                }}>
+                    <CircularUI skillSet={skillSet} />
+                </div>
             </div>
         );
     }
@@ -24,11 +38,11 @@ const MyCarousel = () => {
     };
     return (
         <div>
-            <Slider {...settings} style={{width: '90vw'}}>
-                <CustomSlide skillSet={embeddedSys} />
-                <CustomSlide skillSet={webDev} />
-                <CustomSlide skillSet={embeddedSys} />
-                <CustomSlide skillSet={embeddedSys} />
+            <Slider {...settings} style={{ width: '90vw' }}>
+                <CustomSlide skillSet={embeddedSys} text='Embedded System' />
+                <CustomSlide skillSet={webDev} text='Web Development' />
+                <CustomSlide skillSet={embeddedSys} text='Automation - IoT' />
+                <CustomSlide skillSet={embeddedSys} text='Other Tech & Tools' />
             </Slider>
         </div>
     );
