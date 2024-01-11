@@ -8,7 +8,7 @@ import Sidebar from './components/section1/sidebar/Sidebar'
 import Parallax from './components/section2/Parallax'
 
 import Home from './components/section3/Home'
-import AboutMe from './components/section3/AboutMe'
+import AboutMe from './components/section3/AboutMe/AboutMe.jsx'
 import Work from './components/section3/Work'
 import Footer from './components/section3/Footer'
 import Education from './components/section3/Education'

@@ -1,26 +1,5 @@
-import me from '../../img/section3/me.jpg'
-import CloseButton from './CloseButton'
-import { motion } from 'framer-motion'
-import '../../CSS/section3/about.css'
-
 import React, { Component } from "react";
-import Slider from "react-slick";
-
-const variants = {
-    open: {
-        clipPath: 'circle(1000px)',
-        transition: {
-            type: "spring",
-            stiffness: 20,
-        },
-    },
-};
-const settings = {
-    dots: true,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1
-};
+import me from '../../../img/section3/me.jpg'
 
 class Introduction extends Component {
     render() {
@@ -53,20 +32,4 @@ class Introduction extends Component {
     }
 }
 
-const AboutMe = () => {
-    return (
-        <motion.div className="about-me" animate="open">
-            <motion.div className="bg" variants={variants}>
-                <div className='main'>
-                    <Slider {...settings} style={{ width: '92vw', paddingBottom: '3vh', marginLeft: '2vw' }}>
-                        <Introduction />
-                        <Introduction />
-                    </Slider>
-                </div>
-                <CloseButton />
-            </motion.div>
-        </motion.div>
-    )
-}
-
-export default AboutMe
+export default Introduction
