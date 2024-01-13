@@ -5,6 +5,7 @@ import '../../../CSS/section3/AboutMe.css'
 
 import React, { Component } from "react";
 import Slider from "react-slick";
+import Finland from './Finland';
 
 const variants = {
     open: {
@@ -29,7 +30,7 @@ const AboutMe = () => {
                 <div className='main'>
                     <Slider {...settings} style={{ width: '92vw', paddingBottom: '3vh', marginLeft: '2vw' }}>
                         <Introduction />
-                        <Introduction />
+                        <Finland />
                     </Slider>
                 </div>
                 <CloseButton />
