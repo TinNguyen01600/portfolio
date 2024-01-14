@@ -1,0 +1,28 @@
+.cinephile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+        width: 30vw;
+    }
+
+    .text {
+        width: 45%;
+        padding: 3vh 0 3vh 0;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        line-height: 5vh;
+        font-size: 3vh;
+
+        h1 {
+            font-size: 6vh;
+            margin-bottom: 3vh;
+        }
+
+        mark {
+            color: orange;
+            background: transparent;
+        }
+    }
+}

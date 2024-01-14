@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import movie from '../../../img/section3/aboutme/movie.jpg'
-import '../../../CSS/section3/AboutMe/Introduction.css'
+import '../../../CSS/section3/AboutMe/Cinephile.css'
 
 const Cinephile = (props) => {
     return (
         <div {...props}>
-            <div className='introduction'>
+            <div className='cinephile'>
                 <img src={movie} alt="" />
                 <div className="text">
                     <h1>Cinephile.</h1>
