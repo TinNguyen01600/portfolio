@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import movie from '../../../img/section3/aboutme/movie.jpg'
+import movie_icon from '../../../img/section3/aboutme/movie_icon.svg'
 import '../../../CSS/section3/AboutMe/Cinephile.css'
 
 const Cinephile = (props) => {
@@ -8,7 +9,10 @@ const Cinephile = (props) => {
             <div className='cinephile'>
                 <img src={movie} alt="" />
                 <div className="text">
-                    <h1>Cinephile.</h1>
+                    <h1>
+                        <p>Cinephile</p>
+                        <img src={movie_icon} alt="" />
+                    </h1>
                     <p>
                         I have a lot of favorite occupation.
                         I love watching television series in my free time.

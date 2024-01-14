@@ -21,6 +21,7 @@ const Music = (props) => {
                     <iframe width="650vw" height='400vh'
                         src="https://www.youtube.com/embed/Ui5UxquV-Ds">
                     </iframe>
+                    <i>"Kiss the rain" by composer / pianist Yiruma</i>
                 </div>
             </div>
         </div>

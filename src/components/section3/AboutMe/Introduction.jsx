@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import me from '../../../img/section3/aboutme/me.jpg'
+import waving_hand from '../../../img/section3/aboutme/waving-hand.svg'
 import '../../../CSS/section3/AboutMe/Introduction.css'
 
 const Introduction = (props) => {
@@ -8,7 +9,10 @@ const Introduction = (props) => {
             <div className='introduction'>
                 <img src={me} alt="" />
                 <div className="text">
-                    <h1>Hello! My name is <mark>Tin Nguyen</mark>.</h1>
+                    <h1>
+                        Hello ! <img src={waving_hand} alt="" />
+                        <p>My name is <mark>Tin Nguyen</mark></p>
+                    </h1>
                     <h3>Your friendly neighborhood software engineer</h3>
                     <ul>
                         <li>
