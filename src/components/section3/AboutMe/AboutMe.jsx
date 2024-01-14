@@ -6,6 +6,7 @@ import '../../../CSS/section3/AboutMe/AboutMe.css'
 import React, { Component } from "react";
 import Slider from "react-slick";
 import Finland from './Finland';
+import Cinephile from './Cinephile';
 
 const SampleArrow = (props) => {
     const { className, style, onClick } = props;
@@ -44,6 +45,7 @@ const AboutMe = () => {
                     <Slider {...settings} style={{ width: '92vw', marginLeft: '2vw' }}>
                         <Introduction />
                         <Finland />
+                        <Cinephile />
                     </Slider>
                 </div>
                 <CloseButton />
