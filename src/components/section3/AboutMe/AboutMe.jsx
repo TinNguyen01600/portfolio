@@ -1,7 +1,7 @@
 import CloseButton from '../CloseButton'
 import Introduction from './Introduction'
 import { motion } from 'framer-motion'
-import '../../../CSS/section3/AboutMe.css'
+import '../../../CSS/section3/AboutMe/AboutMe.css'
 
 import React, { Component } from "react";
 import Slider from "react-slick";
