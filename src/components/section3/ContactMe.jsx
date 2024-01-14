@@ -18,6 +18,7 @@ const ContactMe = () => {
             <motion.div className="bg" variants={variants}>
                 <div className='main'>
                     <div className="text-ctn">
+                        <h1>Let's work together</h1>
                         <div>
                             <h2>Email</h2>
                             <span>tinnguyen@gmail.com</span>
@@ -30,6 +31,14 @@ const ContactMe = () => {
                             <h2>LinkedIn</h2>
                             <span>tinnguyen01600</span>
                         </div>
+                    </div>
+                    <div className="form-ctn">
+                        <form action="">
+                            <input type="text" required placeholder='Name' />
+                            <input type="email" required placeholder='Email' />
+                            <textarea rows={10} placeholder='Message'></textarea>
+                            <button>Submit</button>
+                        </form>
                     </div>
                 </div>
                 <CloseButton />
