@@ -8,7 +8,10 @@ class Finland extends Component {
         return (
             <div {...props}>
                 <div className='finland'>
-                    <img src={fishing} alt="" />
+                    <div className="image">
+                        <img src={fishing} alt="" />
+                        <p><i>My first summer - Local beach - Vaasa</i></p>
+                    </div>
                     <div className="text">
                         <h1>New life <mark>New me</mark></h1>
                         <p>
