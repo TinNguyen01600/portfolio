@@ -14,7 +14,7 @@ const Music = (props) => {
                     <p>
                         Besides, I'm also keen on arts, especially music and drawing.
                         I can play guitar passably, and enjoy it. I usually practice guitar in my spare time,
-                        mostly on Youtube and this commandably website Songsterr.
+                        mostly on Youtube and this commandably website <a href="https://www.songsterr.com/" target="_blank" style={{color: 'black'}}><i>Songsterr</i></a>.
                     </p>
                 </div>
                 <div className="video">
