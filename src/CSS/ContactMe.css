@@ -45,6 +45,14 @@
                         color: black;
                         border-radius: 5px;
                     }
+
+                    button {
+                        padding: 1vw;
+                        border: none;
+                        background-color: orange;
+                        cursor: pointer;
+                        font-weight: 500;
+                    }
                 }
             }
         }
