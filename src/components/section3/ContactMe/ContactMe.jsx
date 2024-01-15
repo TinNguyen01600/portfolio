@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion'
-import CloseButton from './CloseButton';
-import '../../CSS/ContactMe.css'
+import CloseButton from '../CloseButton';
+import '../../../CSS/ContactMe.css'
 import { useEffect, useRef, useState } from 'react';
 
 const variants1 = {

@@ -13,7 +13,7 @@ import Work from './components/section3/Work'
 import Footer from './components/section3/Footer'
 import Education from './components/section3/Education'
 import Skills from './components/section3/Skills/Skills.jsx';
-import ContactMe from './components/section3/ContactMe.jsx'
+import ContactMe from './components/section3/ContactMe/ContactMe.jsx'
 
 function App() {
     return (
