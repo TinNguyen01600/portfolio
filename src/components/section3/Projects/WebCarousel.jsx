@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 import ghibli from '../../../img/section3/proj/ghibli.png'
 import hero from '../../../img/section3/proj/hero.png'
 import hangman from '../../../img/section3/proj/hangman.png'
@@ -40,15 +41,26 @@ const WebCarousel = (props) => {
                     </div>
                     <div className="btns">
                         <a href="https://github.com/TinNguyen01600/WikiHero" target="_blank">
-                            <button>Source Code</button>
+                            <motion.button
+                                className="source-code"
+                                whileHover={{ scale: 1.15 }}
+                                whileTap={{ scale: 0.85, rotate: '2.5deg' }}
+                            >
+                                Source Code
+                            </motion.button>
                         </a>
                         <a href="https://tin-nguyen-wikihero.netlify.app/" target="_blank">
-                            <button>Demo</button>
+                            <motion.button
+                                className="demo"
+                                whileHover={{ scale: 1.15 }}
+                                whileTap={{ scale: 0.85, rotate: '2.5deg' }}
+                            >
+                                Demo
+                            </motion.button>
                         </a>
                     </div>
                 </div>
             </div>
-
             <div {...props}>
                 <div className='project-item'>
                     <img src={ghibli} alt="" />
@@ -61,10 +73,22 @@ const WebCarousel = (props) => {
                     </div>
                     <div className="btns">
                         <a href="https://github.com/TinNguyen01600/Ghibli_Studio_App" target="_blank">
-                            <button>Source Code</button>
+                            <motion.button
+                                className="source-code"
+                                whileHover={{ scale: 1.15 }}
+                                whileTap={{ scale: 0.85, rotate: '2.5deg' }}
+                            >
+                                Source Code
+                            </motion.button>
                         </a>
                         <a href="https://tin-nguyen-ghibli-studio-app.netlify.app/" target="_blank">
-                            <button>Demo</button>
+                            <motion.button
+                                className="demo"
+                                whileHover={{ scale: 1.15 }}
+                                whileTap={{ scale: 0.85, rotate: '2.5deg' }}
+                            >
+                                Demo
+                            </motion.button>
                         </a>
                     </div>
                 </div>
@@ -80,10 +104,22 @@ const WebCarousel = (props) => {
                     </div>
                     <div className="btns">
                         <a href="https://github.com/TinNguyen01600/Hangman_web" target="_blank">
-                            <button>Source Code</button>
+                            <motion.button
+                                className="source-code"
+                                whileHover={{ scale: 1.15 }}
+                                whileTap={{ scale: 0.85, rotate: '2.5deg' }}
+                            >
+                                Source Code
+                            </motion.button>
                         </a>
                         <a href="https://tin-nguyen-hangman.netlify.app/" target="_blank">
-                            <button>Demo</button>
+                            <motion.button
+                                className="demo"
+                                whileHover={{ scale: 1.15 }}
+                                whileTap={{ scale: 0.85, rotate: '2.5deg' }}
+                            >
+                                Demo
+                            </motion.button>
                         </a>
                     </div>
                 </div>
@@ -101,10 +137,22 @@ const WebCarousel = (props) => {
                     </div>
                     <div className="btns">
                         <a href="https://github.com/TinNguyen01600/portfolio" target="_blank">
-                            <button>Source Code</button>
+                            <motion.button
+                                className="source-code"
+                                whileHover={{ scale: 1.15 }}
+                                whileTap={{ scale: 0.85, rotate: '2.5deg' }}
+                            >
+                                Source Code
+                            </motion.button>
                         </a>
                         <a href="#" target="_blank">
-                            <button>Demo</button>
+                            <motion.button
+                                className="demo"
+                                whileHover={{ scale: 1.15 }}
+                                whileTap={{ scale: 0.85, rotate: '2.5deg' }}
+                            >
+                                Demo
+                            </motion.button>
                         </a>
                     </div>
                 </div>
