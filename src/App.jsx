@@ -14,6 +14,7 @@ import Footer from './components/section3/Footer'
 import Education from './components/section3/Education'
 import Skills from './components/section3/Skills/Skills.jsx';
 import ContactMe from './components/section3/ContactMe/ContactMe.jsx'
+import Projects from './components/section3/Projects/Projects.jsx';
 
 function App() {
     return (
@@ -35,6 +36,7 @@ function App() {
                         <Route path="/education" element={<Education />} />
                         <Route path="/skills" element={<Skills />} />
                         <Route path="/contact" element={<ContactMe />} />
+                        <Route path="/projects" element={<Projects />} />
                     </Routes>
                 </Router>
                 <Footer />
