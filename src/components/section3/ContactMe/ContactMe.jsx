@@ -3,6 +3,7 @@ import CloseButton from '../CloseButton';
 import '../../../CSS/ContactMe.css'
 import { useEffect, useRef, useState } from 'react';
 import PhoneSvg from './PhoneSvg';
+import emailjs from '@emailjs/browser';
 
 const variants1 = {
     open: {
@@ -32,6 +33,21 @@ const variants2 = {
 const ContactMe = () => {
     const ref = useRef()
     const [showSvg, setShowSvg] = useState(true)
+
+    const formRef = useRef()
+    const [error, setError] = useState(false)
+    const [success, setSuccess] = useState(false)
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_mxslkxb', 'template_m7xbakn', formRef.current, 'Ty83mEat4nH5225Eg')
+            .then((result) => {
+                console.log(result.text);
+                setSuccess(true)
+            }, (error) => {
+                console.log(error.text);
+                setError(true)
+            });
+    };
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -71,18 +87,22 @@ const ContactMe = () => {
                         {showSvg ?
                             <motion.div
                                 animate={{ opacity: [1, 0] }}
-                                transition={{ delay: 4, duration: 1, ease: 'linear' }}
+                                transition={{ delay: 4.5, duration: 1, ease: 'linear' }}
                             >
                                 <PhoneSvg />
                             </motion.div>
                             :
                             <motion.form
-                                animate={{ opacity: [0, 1], transition: { duration: 1 } }}
+                                animate={{ opacity: [0, 1], transition: { delay: 0.5, duration: 1 } }}
+                                ref={formRef}
+                                onSubmit={sendEmail}
                             >
-                                <input type="text" required placeholder='Name' />
-                                <input type="email" required placeholder='Email' />
-                                <textarea rows={10} placeholder='Message'></textarea>
+                                <input type="text" required placeholder='Name' name='name'/>
+                                <input type="email" required placeholder='Email' name='email'/>
+                                <textarea rows={10} placeholder='Message' name='message'></textarea>
                                 <button>Submit</button>
+                                {error && 'Error'}
+                                {success && 'Success'}
                             </motion.form>
                         }
                     </motion.div>
