@@ -3,7 +3,6 @@ import Introduction from './Introduction'
 import { motion } from 'framer-motion'
 import '../../../CSS/section3/AboutMe/AboutMe.css'
 
-import React, { Component } from "react";
 import Slider from "react-slick";
 import Finland from './Finland';
 import Cinephile from './Cinephile';
