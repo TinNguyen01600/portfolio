@@ -17,15 +17,31 @@
 
     .description {
         width: 90%;
-        height: 27%;
+        height: 15vh;
         display: flex;
         flex-direction: column;
         gap: 1vh;
-        p { font-size: 3vh;}
+
+        h1 {
+            font-size: 4vh;
+        }
+
+        p {
+            font-size: 3vh;
+        }
     }
 
     .btns {
         display: flex;
         gap: 2vw;
+
+        button {
+            background-color: #b3caf5;
+            font-size: large;
+            border-radius: 8px;
+            padding: 1.5vh 1vw;
+            cursor: pointer;
+            border: 2px solid black;
+        }
     }
 }
