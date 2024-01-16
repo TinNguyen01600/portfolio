@@ -37,6 +37,10 @@ const WebCarousel = (props) => {
                             and Axios to show, search and filter characters information.
                         </p>
                     </div>
+                    <div className="btns">
+                        <button>Source Code</button>
+                        <button>Demo</button>
+                    </div>
                 </div>
             </div>
 
@@ -50,16 +54,9 @@ const WebCarousel = (props) => {
                             to show and filter the movies info.
                         </p>
                     </div>
-                </div>
-            </div>
-            <div {...props}>
-                <div className='project-item'>
-                    <img src={hangman} alt="" />
-                    <div className="description">
-                        <h1>Hangman game App</h1>
-                        <p>
-                            Classic Hang-man game, a React-Redux application with multiple componenets, Material UI and framer-motion.
-                        </p>
+                    <div className="btns">
+                        <button>Source Code</button>
+                        <button>Demo</button>
                     </div>
                 </div>
             </div>
@@ -71,6 +68,29 @@ const WebCarousel = (props) => {
                         <p>
                             Classic Hang-man game, a React-Redux application with multiple componenets, Material UI and framer-motion.
                         </p>
+                    </div>
+                    <div className="btns">
+                        <button>Source Code</button>
+                        <button>Demo</button>
+                    </div>
+                </div>
+            </div>
+            <div {...props}>
+                <div className='project-item'>
+                    <img src={hangman} alt="" />
+                    <div className="description">
+                        <h1>Hangman game App</h1>
+                        <p>
+                            Classic Hang-man game, a React-Redux application with multiple componenets, Material UI and framer-motion.
+                        </p>
+                    </div>
+                    <div className="btns">
+                        <a href="https://github.com/TinNguyen01600/Hangman_web" target="_blank">
+                            <button>Source Code</button>
+                        </a>
+                        <a href="https://tin-nguyen-hangman.netlify.app/" target="_blank">
+                            <button>Demo</button>
+                        </a>
                     </div>
                 </div>
             </div>
