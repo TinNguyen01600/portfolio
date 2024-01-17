@@ -9,12 +9,12 @@ const MyTabs = () => {
         <Tabs>
             <TabList>
                 <Tab>
-                    <div className="major" style={{fontSize: '3vh'}}>
+                    <div className="major" style={{fontSize: '4vh'}}>
                         Web Development
                     </div>
                 </Tab>
                 <Tab>
-                    <div className="major" style={{fontSize: '3vh'}}>
+                    <div className="major" style={{fontSize: '4vh'}}>
                         Embedded System
                     </div>
                 </Tab>
