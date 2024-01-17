@@ -4,7 +4,7 @@ import ghibli from '../../../img/section3/proj/ghibli.png'
 import hero from '../../../img/section3/proj/hero.png'
 import hangman from '../../../img/section3/proj/hangman.png'
 import portfolio from '../../../img/section3/proj/portfolio.png'
-import '../../../CSS/section3/Projects/WebCarousel.css'
+import '../../../CSS/section3/Projects/EmbeddedCarousel.css'
 
 const SampleArrow = (props) => {
     const { className, style, onClick } = props;
@@ -20,7 +20,7 @@ const SampleArrow = (props) => {
 const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow: <SampleArrow />,
     prevArrow: <SampleArrow />
@@ -30,7 +30,7 @@ const EmbeddedCarousel = (props) => {
     return (
         <Slider {...settings} style={{ width: '92vw', marginLeft: '2vw' }}>
             <div {...props}>
-                <div className='project-item'>
+                <div className='embedded-item'>
                     <img src={hero} alt="" />
                     <div className="description">
                         <h1>OUTDOOR TEMPERATURE, HUMIDITY - DHT22 Sensor</h1>
@@ -39,8 +39,6 @@ const EmbeddedCarousel = (props) => {
                             read the outdoor temperature and humidity and display the values on Realterm interface. Modbus RTU is used as data transfer method
                             between Master (MCU) and Slave (sensor)
                         </p>
-                    </div>
-                    <div className="btns">
                         <a href="https://github.com/TinNguyen01600/WikiHero" target="_blank">
                             <motion.button
                                 className="source-code"
@@ -54,7 +52,7 @@ const EmbeddedCarousel = (props) => {
                 </div>
             </div>
             <div {...props}>
-                <div className='project-item'>
+                <div className='embedded-item'>
                     <img src={ghibli} alt="" />
                     <div className="description">
                         <h1>AUTOMATIC HAND-WASH / SANITIZER U.S. SENSOR AND SERVO MOTOR</h1>
@@ -63,8 +61,6 @@ const EmbeddedCarousel = (props) => {
                             sensor and Arduino UNO board to detect the obstacle in front of
                             the soap bottle (your hand) and control the servo to pull the dispenser .
                         </p>
-                    </div>
-                    <div className="btns">
                         <a href="https://github.com/TinNguyen01600/Ghibli_Studio_App" target="_blank">
                             <motion.button
                                 className="source-code"
@@ -78,7 +74,7 @@ const EmbeddedCarousel = (props) => {
                 </div>
             </div>
             <div {...props}>
-                <div className='project-item'>
+                <div className='embedded-item'>
                     <img src={hangman} alt="" />
                     <div className="description">
                         <h1>TMA Pronest-Hardware SOUND SIGNAL ANALYZER</h1>
@@ -87,8 +83,6 @@ const EmbeddedCarousel = (props) => {
                             timetable. The sound signal information is transferred to a web
                             server via ESP32 LoRaWAN protocol, which can later be observed and stipulated by customers.
                         </p>
-                    </div>
-                    <div className="btns">
                         <a href="https://github.com/TinNguyen01600/Hangman_web" target="_blank">
                             <motion.button
                                 className="source-code"
@@ -102,19 +96,17 @@ const EmbeddedCarousel = (props) => {
                 </div>
             </div>
             <div {...props}>
-                <div className='project-item'>
+                <div className='embedded-item'>
                     <img src={portfolio} alt="" />
                     <div className="description">
                         <h1>RASTER-IMAGE PROCESSOR: FIX AND OPTIMIZATION</h1>
                         <p>
-                            This application is capable of merging 2 GeoTIFF picture together. 
+                            This application is capable of merging 2 GeoTIFF picture together.
                             The thesis related to visualizing differences of the actual and
                             desired terrain, focused on identifying and fixing performance
                             issues in raster image processor to improve the user experience
                             and making the software more efficient.
                         </p>
-                    </div>
-                    <div className="btns">
                         <a href="https://github.com/TinNguyen01600/portfolio" target="_blank">
                             <motion.button
                                 className="source-code"

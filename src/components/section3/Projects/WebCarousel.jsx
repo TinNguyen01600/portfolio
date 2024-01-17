@@ -30,7 +30,7 @@ const WebCarousel = (props) => {
     return (
         <Slider {...settings} style={{ width: '92vw', marginLeft: '2vw' }}>
             <div {...props}>
-                <div className='project-item'>
+                <div className='web-item'>
                     <img src={hero} alt="" />
                     <div className="description">
                         <h1>Wiki Hero App</h1>
@@ -62,7 +62,7 @@ const WebCarousel = (props) => {
                 </div>
             </div>
             <div {...props}>
-                <div className='project-item'>
+                <div className='web-item'>
                     <img src={ghibli} alt="" />
                     <div className="description">
                         <h1>Ghibli Studio App</h1>
@@ -94,7 +94,7 @@ const WebCarousel = (props) => {
                 </div>
             </div>
             <div {...props}>
-                <div className='project-item'>
+                <div className='web-item'>
                     <img src={hangman} alt="" />
                     <div className="description">
                         <h1>Hangman game App</h1>
@@ -125,7 +125,7 @@ const WebCarousel = (props) => {
                 </div>
             </div>
             <div {...props}>
-                <div className='project-item'>
+                <div className='web-item'>
                     <img src={portfolio} alt="" />
                     <div className="description">
                         <h1>My Portfolio</h1>
