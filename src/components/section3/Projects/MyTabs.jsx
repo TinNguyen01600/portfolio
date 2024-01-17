@@ -2,6 +2,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
 import WebCarousel from './WebCarousel';
+import EmbeddedCarousel from './EmbeddedCarousel';
 
 const MyTabs = () => {
     return (
@@ -23,7 +24,7 @@ const MyTabs = () => {
                 <WebCarousel />
             </TabPanel>
             <TabPanel>
-                <div className="projects-grid"></div>
+                <EmbeddedCarousel />
             </TabPanel>
         </Tabs>
     )
