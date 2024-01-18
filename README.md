@@ -183,6 +183,40 @@
 * [App.jsx](./src/App.jsx)
 * [main.jsx](./src/main.jsx)
 
+## Instruction
+
+1. Open your terminal and clone the repository with the following command:
+
+```
+git clone https://github.com/TinNguyen01600/portfolio
+```
+
+2. Install all the packages:
+
+```
+npm install
+```
+
+3. Start the application in your local machine:
+
+```
+npm run dev
+```
+
+\*\* Or simply access the deployed version on Netlify (https://tin-nguyen-portfolio.netlify.app/).
+
+<pre>
+Package use: 
+    "@emailjs/browser": "^3.12.1",
+    "framer-motion": "^10.16.16",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.1",
+    "react-slick": "^0.29.0",
+    "react-tabs": "^6.0.2",
+    "reactjs-popup": "^2.0.6",
+    "slick-carousel": "^1.8.1"
+</pre>
 
 ## React + Vite
 
