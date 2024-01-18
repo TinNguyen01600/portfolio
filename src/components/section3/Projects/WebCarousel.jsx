@@ -145,7 +145,7 @@ const WebCarousel = (props) => {
                                 Source Code
                             </motion.button>
                         </a>
-                        <a href="#" target="_blank">
+                        <a href="https://tin-nguyen-portfolio.netlify.app/" target="_blank">
                             <motion.button
                                 className="demo"
                                 whileHover={{ scale: 1.15 }}
