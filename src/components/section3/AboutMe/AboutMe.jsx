@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import Finland from './Finland';
 import Cinephile from './Cinephile';
 import Music from './Music';
+import Travel from './Travel';
 
 const SampleArrow = (props) => {
     const { className, style, onClick } = props;
@@ -46,6 +47,7 @@ const AboutMe = () => {
                         <Introduction />
                         <Finland />
                         <Cinephile />
+                        <Travel />
                         <Music />
                     </Slider>
                 </div>
