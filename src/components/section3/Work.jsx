@@ -3,6 +3,9 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import laptop from '../../img/section3/laptop.png'
 import { motion } from 'framer-motion';
+import '../../CSS/section3/Work.css'
+import wapice from '../../img/section3/wapice.png'
+import tma from '../../img/section3/tma.png'
 
 const variants = {
     open: {
@@ -33,6 +36,7 @@ const Work = () => {
                                     >
                                         <h1>Embedded Software Intern</h1>
                                         <mark>TMA Software Solutions Limited</mark>
+                                        <img src={tma} alt="" style={{ width: '12vw', height: '10vh'}}/>
                                     </motion.div>
                                 }
                                 position="right center"
@@ -66,6 +70,7 @@ const Work = () => {
                                     >
                                         <h1>Software Designer Talent</h1>
                                         <mark>Wapice Ltd.</mark>
+                                        <img src={wapice} alt="" style={{ width: '13vw', height: '7vh'}}/>
                                     </motion.div>
                                 }
                                 position="right center"

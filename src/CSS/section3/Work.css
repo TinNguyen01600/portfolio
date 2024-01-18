@@ -1,0 +1,54 @@
+.work {
+    height: 92%;
+    width: 100%;
+
+    .bg {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        background: whitesmoke;
+
+        .main {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            img {
+                width: 28vw;
+            }
+
+            .tree {
+                border-left: 3px solid black;
+                padding-top: 5vh;
+
+                .item {
+                    display: flex;
+                    margin-bottom: 5vh;
+                    cursor: pointer;
+
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1vh;
+                        border: 1px solid black;
+                        border-radius: 10px;
+                        width: 28vw;
+                        padding: 1vw;
+
+                        h1 {
+                            margin-bottom: 1vh;
+                        }
+
+                        mark {
+                            font-size: 3vh;
+                            color: blue;
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
