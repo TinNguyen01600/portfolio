@@ -9,6 +9,7 @@ import Cinephile from './Cinephile';
 import Music from './Music';
 import Travel from './Travel';
 import Football from './Football';
+import Introductory from './Introductory';
 
 const SampleArrow = (props) => {
     const { className, style, onClick } = props;
@@ -47,6 +48,7 @@ const AboutMe = () => {
                     <Slider {...settings} style={{ width: '92vw', marginLeft: '2vw' }}>
                         <Introduction />
                         <Finland />
+                        <Introductory />
                         <Cinephile />
                         <Travel />
                         <Music />
