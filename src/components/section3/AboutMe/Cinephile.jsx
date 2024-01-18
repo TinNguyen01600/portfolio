@@ -20,7 +20,7 @@ const Cinephile = (props) => {
                         its spin-off <mark>Better Call Saul</mark>. 
                         For me, Breaking Bad is just a must-watch series for everyone.
                         Especially, <b>Gus Fring</b> and <b>Lalo Salamanca</b>'s performance always give me chill every time they
-                        appear on screen, as they're my 2 most favourite characters of all time
+                        appear on screen, as they're my 2 most favourite characters of all time.
                     </p>
                 </div>
             </div>

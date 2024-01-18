@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import '../../../CSS/section3/AboutMe/Travel.css'
 import airplane from '../../../img/section3/aboutme/airplane.svg'
 import travel from '../../../img/section3/aboutme/travel.jpg'

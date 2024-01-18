@@ -8,6 +8,7 @@ import Finland from './Finland';
 import Cinephile from './Cinephile';
 import Music from './Music';
 import Travel from './Travel';
+import Football from './Football';
 
 const SampleArrow = (props) => {
     const { className, style, onClick } = props;
@@ -49,6 +50,7 @@ const AboutMe = () => {
                         <Cinephile />
                         <Travel />
                         <Music />
+                        <Football />
                     </Slider>
                 </div>
                 <CloseButton />
