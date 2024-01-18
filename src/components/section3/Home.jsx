@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import '../../CSS/section3/Home.css'
 
 const Home = () => {
     return (

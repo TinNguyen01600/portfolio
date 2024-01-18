@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import CloseButton from '../CloseButton';
-import '../../../CSS/ContactMe.css'
+import '../../../CSS/section3/ContactMe.css'
 import { useEffect, useRef, useState } from 'react';
 import PhoneSvg from './PhoneSvg';
 import emailjs from '@emailjs/browser';

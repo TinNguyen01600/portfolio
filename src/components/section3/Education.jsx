@@ -4,6 +4,7 @@ import degree from '../../img/section3/degree.svg'
 import award from '../../img/section3/award.svg'
 import certi from '../../img/section3/certi.svg'
 import { useState } from "react";
+import '../../CSS/section3/Education.css'
 
 const variants = {
     open: {
@@ -64,7 +65,7 @@ const Education = () => {
                             <p><i>09.2019 - 06.2023</i></p>
                             <p>I worked hard in my studies and finished the degree with considerably good grades
                                 My major is Embedded System Engineer, concentrated on Object Oriented Programming (C/C++), RTOS,
-                                Microcontrollers & FPGA, Digital & Embedded System Design and Electronics
+                                Microcontrollers & FPGA, Digital & Embedded System Design and Electronics.
                             </p>
                         </motion.div>
                         <motion.div
@@ -179,7 +180,7 @@ const Education = () => {
                         >
                             <p><b>University of Helsinki</b>&ensp;<i>06.2023 - 08.2023</i></p>
                             <p>Introduction to AI is a online course for everyone interested in learning what AI is,
-                                what is possible (and not possible) with AI, and how it affects our lives</p>
+                                what is possible (and not possible) with AI, and how it affects our lives.</p>
                         </motion.div>
                     </div>
                 </div>
