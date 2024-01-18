@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from "react"
 import Astronaut from "./Astronaut"
 import Portals from './Portals.jsx'
+import '../../CSS/section2/Parallax.css'
 
 const Parallax = () => {
     const ref = useRef()
